@@ -1,0 +1,90 @@
+/*------template------*/
+.content h1, .content h2 {
+    font: 400 37px 'Roboto', sans-serif;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content h1 strong, .content h2 strong, .content h3 strong, .content h4 strong {
+    color: #e54a1a;
+    font-weight: normal;
+}
+
+body {
+    color: #3e4d5c;
+    direction: ltr;
+    font: 400 13px 'Roboto', sans-serif;
+    background: #fff;
+}
+
+/*--------------------------*/
+.content .d-subtext {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+    
+.content .d-text {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.content .d-subtext strong, .content .d-text strong{
+    color: #e54a1a;
+    font-weight: normal;
+}
+
+/*------search box-------*/
+.form-search {
+    margin: 0 auto;
+    /*text-align: center;*/
+    position: relative;
+}
+
+form .search-box input {
+    padding: 14px 15px 14px 42px;
+    width: calc(100% - 120px);
+    border-right: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+form .search-box button {
+    width: 120px;
+    /*padding: 15px 22px;*/
+    margin-left: -4px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+form .search-box i {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    font-size: 20px;
+}
+
+form .advance-search .d-subtext {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+form .advance-search .d-subtext > hr {
+    margin-top: 5px;
+}
+
+form .advance-search label, form .advance-search label>select {
+    width: 100%;
+}
+
+form .advance-search-submit {
+    margin-top: 20px;
+}
+
+form .advance-search-submit, form .advance-search-submit > button {
+    width: 100%;
+}

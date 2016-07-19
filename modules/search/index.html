@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/resources/styles/form-controls.css">
+    <link rel="stylesheet" href="/resources/styles/search.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="content" id="team">
+                <h1>Tìm kiếm <strong>Bác sĩ</strong></h1>
+                <div class="d-subtext"><strong>4 Bác sĩ</strong> tham gia tư vấn và hơn thế nữa..</div>
+                <div class="d-text">Tìm kiếm và tư vấn cùng Bác sĩ <strong>mọi lúc</strong>, <strong>mọi nơi</strong>.</div>
+
+                <form class="form-search" action="/Search/SearchDoctor" method="get">
+                    <!-- RENDER SEARCH VIEW-->
+                    <div class="search-box">
+                        <i class="fa fa-search"></i>
+                        <input type="search" id="searchText" name="searchText" placeholder="Nhập tên Bác sĩ hoặc triệu trứng">
+                        <button type="submit">Tìm Kiếm</button>
+                    </div>
+
+                    <div class="advance-search">
+                        <div class="d-subtext">
+                            Nâng cao
+                            <hr>
+                        </div>
+
+                        <div class="row" id="demo">
+                            <div class="col-md-6">
+                                <label>
+                                        <span>
+                                            <i class="fa fa-location-arrow"></i> Địa điểm:
+                                        </span>
+                                        <select data-placeholder="Chọn..." name="province">
+                                            <option value="">Tất cả</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </label>
+
+                            </div>
+                            <div class="col-md-6">
+                                <label>
+                                        <span>
+                                            <i class="fa fa-graduation-cap"></i> Chuyên khoa:
+                                        </span>
+                                        <select data-placeholder="Chọn..." name="specialization">
+                                            <option value="">Tất cả</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </label>
+                            </div>
+                        </div>
+
+                        <div class="advance-search-submit">
+                            <button type="submit">Tìm Kiếm <i class="m-icon-swapright m-icon-white"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
