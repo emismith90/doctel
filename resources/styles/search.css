@@ -47,8 +47,9 @@ body {
 
 form .search-box input {
     padding: 14px 15px 14px 42px;
-    width: calc(100% - 120px);
-    border-right: 0;
+    width: 100%;
+    /*width: calc(100% - 120px);*/
+    /*border-right: 0;*/
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
 }
