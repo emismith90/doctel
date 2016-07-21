@@ -1,17 +1,17 @@
-.content .d-subtext {
+.d-subtext {
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 10px;
 }
     
-.content .d-text {
+.d-text {
     font-size: 30px;
     font-weight: 500;
     line-height: 1.2;
     margin-bottom: 20px;
 }
 
-.content .d-subtext strong, .content .d-text strong{
+.d-subtext strong, .d-text strong{
     color: #e54a1a;
     font-weight: normal;
 }

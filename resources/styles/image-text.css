@@ -9,8 +9,9 @@
 .circle {
     border-radius: 50%;
     border: solid .1rem #3e4d5c;
-    margin-left: 22.22222%;
+    margin-left: 56.22222%;
 }
+
 .content-truncate {
     text-overflow: ellipsis;
     word-wrap: break-word;
@@ -21,15 +22,10 @@
     line-height: 1.5em !important;
     font-size: 1em !important;
 }
-body {
-    color: #3e4d5c;
-    direction: ltr;
-    font: 400 13px 'Roboto', sans-serif;
-    background: #fff;
-}
+
 .split__figure {
-    min-width: 66.66667%;
-    max-width: 66.66667%;
+    min-width: 46.66667%;
+    max-width: 46.66667%;
 }
 .split__content {
     text-align: justify;

@@ -12,8 +12,7 @@ form input, form textarea, form select, form button {
 }
 
 form input {
-    background-color:  #fff;
-    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    background-color:  #fafafa;
     border: 1px solid #b6c3cd;;
     color:#4E565C;
 }
@@ -33,25 +32,22 @@ form input:-ms-input-placeholder {
 
 form textarea {
     color:  #4E565C;
-    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
     padding: 12px;
     border: 1px solid #dbdbdb;
     resize: vertical;
 }
 
 form select {
-    background-color: #fff;
+    background-color: #fafafa;
     color:  #4E565C;
-    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
     padding: 12px 8px;
     border: 1px solid #dbdbdb;
-    background: url('assets/br_down.png') no-repeat right #fff;
+    background: url('assets/br_down.png') no-repeat right #fafafa;
 }
      
 form button {
     background-color:  #e54a1a;
-    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
-    color: #fff;
+    color: #fafafa;
     cursor: pointer;
     border: none;
     outline: none;
@@ -74,6 +70,12 @@ form input, form textarea, form select {
 form input:focus, form textarea:focus, form select:focus {
   box-shadow: 0 0 5px #e54a1a;
   border: 1px solid #e54a1a;
+}
+form input, form textarea, form select, form button {
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+form input:hover, form textarea:hover, form select:hover, form button:hover {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
 }
 
 form label > span {
