@@ -9,7 +9,7 @@
     font-size: 16px;
     font-weight: 600;
 }
-    
+
 .content .heading {
     color: #e54a1a;
     font-size: 26px;
@@ -21,43 +21,50 @@ div[class^="flow-item-left"] {
 }
 
 div[class^="flow-row-"]:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
-    .flow-item-left {
-        float: left;
-        padding-right: 10px;
-        width: 110px;
-    }
-    .flow-item-content {
-        margin-left: 120px;
-    }
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.flow-item-left {
+    float: left;
+    padding-right: 10px;
+    width: 110px;
+}
+
+.flow-item-content {
+    margin-left: 120px;
+}
+
     .flow-item-content:after {
         content: '';
         display: table;
         clear: both;
     }
-        .flow-item-content .bullet {
-            padding-top: 12px;
-            float: left;
+
+    .flow-item-content .bullet {
+        padding-top: 12px;
+        float: left;
+        color: #e54a1a;
+        font-size: 60px;
+        font-weight: 700;
+    }
+
+    .flow-item-content .content {
+        text-align: left;
+    }
+
+        .flow-item-content .content > div.text {
+            margin-left: 45px;
             color: #e54a1a;
-            font-size: 60px;
-            font-weight: 700;
+            font-size: 24px;
         }
-        .flow-item-content .content{           
-            text-align: left;
+
+        .flow-item-content .content > div.sub-text {
+            margin-left: 45px;
+            font-size: 16px;
         }
-            .flow-item-content .content > div.text {
-                margin-left: 45px;
-                color: #e54a1a;
-                font-size: 24px;
-            }
-            .flow-item-content .content > div.sub-text {
-                margin-left: 45px;
-                font-size: 16px;
-            }
-    
+
 .flow-item-left .icon {
     width: 100%;
     height: 100px;
@@ -67,10 +74,10 @@ div[class^="flow-row-"]:after {
     vertical-align: middle;
 }
 
-.flow-item-left .icon > img {
-    width: 60%;
-    padding-top: 20%;
-}
+    .flow-item-left .icon > img {
+        width: 60%;
+        padding-top: 20%;
+    }
 
 hr.vertical-line {
     position: absolute;
@@ -81,8 +88,8 @@ hr.vertical-line {
     padding-top: 40px;
 }
 
-@media (min-width: 767px){
-   .padding-top-column {
+@media (min-width: 767px) {
+    .padding-top-column {
         padding-top: 0;
     }
 }

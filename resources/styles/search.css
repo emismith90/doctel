@@ -3,18 +3,17 @@
     line-height: 1.2;
     margin-bottom: 10px;
 }
-    
+
 .d-text {
     font-size: 30px;
     font-weight: 500;
     line-height: 1.2;
     margin-bottom: 20px;
 }
-
-.d-subtext strong, .d-text strong{
-    color: #e54a1a;
-    font-weight: normal;
-}
+    .d-subtext strong, .d-text strong {
+        color: #e54a1a;
+        font-weight: normal;
+    }
 
 /*------search box-------*/
 .form-search {
@@ -52,11 +51,11 @@ form .advance-search .d-subtext {
     margin-top: 20px;
 }
 
-form .advance-search .d-subtext > hr {
-    margin-top: 5px;
-}
+    form .advance-search .d-subtext > hr {
+        margin-top: 5px;
+    }
 
-form .advance-search label, form .advance-search label>select {
+form .advance-search label, form .advance-search label > select {
     width: 100%;
 }
 
@@ -64,6 +63,6 @@ form .advance-search-submit {
     margin-top: 20px;
 }
 
-form .advance-search-submit, form .advance-search-submit > button {
-    width: 100%;
-}
+    form .advance-search-submit, form .advance-search-submit > button {
+        width: 100%;
+    }

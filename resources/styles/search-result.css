@@ -1,50 +1,45 @@
-.search-result{
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.search-result .result-text{
-    margin-top: 20px;
-}
-
 .split {
     margin-bottom: 52px;
 }
 
-.split:after {
+    .split:after {
         content: '';
         display: table;
         clear: both;
     }
-    .split__img {
-        float: left;
-        padding: 10px;
-        width: 110px;
-    }
-    .split__figure {
-        padding: 10px 10px 10px 0;
-        margin-left: 110px;
-    }
+
+.split__img {
+    float: left;
+    padding: 10px;
+    width: 110px;
+}
+
+.split__figure {
+    padding: 10px 10px 10px 0;
+    margin-left: 110px;
+}
 
 figcaption h2.title,
 figcaption div.detail {
-  margin: 0;
-  padding: 10px 0;
-  width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
 }
 
 figcaption h2.title {
-  font-size: 1.3em;
-  font-weight: 300;
-  text-transform: uppercase;
-  border-bottom: .5px solid #3e4d5c;
+    font-size: 1.3em;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: 0.22222rem solid #e54a1a;
+    padding-bottom: 0.27778rem;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
-figcaption h2.title span {
-  font-weight: 800;
-}
+
+    figcaption h2.title span {
+        font-weight: 800;
+    }
 
 figcaption div.detail .detail-line {
     line-height: 22px;
@@ -53,72 +48,74 @@ figcaption div.detail .detail-line {
     white-space: nowrap;
 }
 
-figcaption div.detail .detail-line .box {
-    padding: 6px;
-    background: #e54a1a;
-    color: #fff;
-    border-radius: 2px;
-    text-transform: uppercase;
-    margin-right: 8px;
-    display: inline;
-}
+    figcaption div.detail .detail-line .box {
+        padding: 6px;
+        background: #e54a1a;
+        color: #fff;
+        border-radius: 2px;
+        text-transform: uppercase;
+        margin-right: 8px;
+        display: inline;
+    }
 
-figcaption div.detail .detail-line i {
-    color: #e54a1a;
-    margin-right: 8px;
-}
+    figcaption div.detail .detail-line i {
+        color: #e54a1a;
+        margin-right: 8px;
+    }
 
 .card {
     margin-top: 20px;
-  will-change: transform;
-  position: relative;
-  border-radius: 2px;
-  overflow: hidden;
-  background-color: #fafafa;
-  -webkit-transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.16),1px 2px 8px 1px rgba(0,0,0,0.16);
-  min-height: (52 + 180)px;
-  height: 241px;
+    will-change: transform;
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: #fafafa;
+    -webkit-transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.16),1px 2px 8px 1px rgba(0,0,0,0.16);
+    height: 241px;
 }
 
-.card:hover {
-  box-shadow: 1px 6px 12px 1px rgba(0,0,0,0.16),1px 4px 20px 1px rgba(0,0,0,0.16);
-}
+    .card:hover {
+        box-shadow: 1px 6px 12px 1px rgba(0,0,0,0.16),1px 4px 20px 1px rgba(0,0,0,0.16);
+    }
+
 .card__button:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .card__action-bar {
     text-align: right;
-  position: absolute;
-  bottom: 0;
-  top: auto;
-  left: 0;
-  right: 0;
-  padding: 0 8px;
-  border-top: 1px solid #E0E0E0;
-  box-sizing: border-box;
-  height: 52px;
-  -webkit-transition: left 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: left 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    right: 0;
+    padding: 0 8px;
+    border-top: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    height: 52px;
+    -webkit-transition: left 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: left 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 .card__button {
     border: none;
-  background: transparent;
-  text-transform: uppercase;
-  outline: none;
-  position: relative;
-  display: inline-block;
-  line-height: 52px;
-  color: #e54a1a;
+    background: transparent;
+    text-transform: uppercase;
+    outline: none;
+    position: relative;
+    display: inline-block;
+    line-height: 52px;
+    color: #e54a1a;
 }
 
 .card__image {
-  border-radius: 50%;
+    border-radius: 50%;
 }
+
 .card__action-bar {
-  left: 0;
+    left: 0;
 }
 
 @media (min-width: 1001px) {
@@ -126,6 +123,7 @@ figcaption div.detail .detail-line i {
         padding: 10px 20px 20px 0px;
         margin-left: 180px;
     }
+
     .split__img {
         padding: 20px;
         width: 180px;
