@@ -15,7 +15,7 @@
 }
 
 .split__figure {
-    padding: 10px 10px 10px 0;
+    padding: 5px 10px 10px 0;
     margin-left: 110px;
 }
 
@@ -37,7 +37,7 @@ figcaption h2.title {
     white-space: nowrap;
 }
 
-    figcaption h2.title span {
+    figcaption h2.title strong {
         font-weight: 800;
     }
 
@@ -60,7 +60,8 @@ figcaption div.detail .detail-line {
 
     figcaption div.detail .detail-line i {
         color: #e54a1a;
-        margin-right: 8px;
+        width: 20px;
+        text-align: center;
     }
 
 .card {
@@ -118,7 +119,7 @@ figcaption div.detail .detail-line {
     left: 0;
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 768px) {
     .split__figure {
         padding: 10px 20px 20px 0px;
         margin-left: 180px;

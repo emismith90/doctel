@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 
 <head>
     <meta charset="utf-8">
@@ -7,9 +7,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-        crossorigin="anonymous">
+          crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
-        crossorigin="anonymous">
+          crossorigin="anonymous">
 
     <link rel="stylesheet" href="/resources/styles/page.css">
     <link rel="stylesheet" href="/resources/styles/form-controls.css">
@@ -22,7 +22,7 @@
     <section class="area">
         <div class="container">
             <div class="row">
-                <div class="content" id="team">
+                <div class="col-md-12 content" id="team">
                     <h1>Tìm kiếm <strong>Bác sĩ</strong></h1>
                     <div class="d-subtext"><strong>4 Bác sĩ</strong> tham gia tư vấn và hơn thế nữa..</div>
                     <div class="d-text">Tìm kiếm và tư vấn cùng Bác sĩ <strong>mọi lúc</strong>, <strong>mọi nơi</strong>.</div>
@@ -45,7 +45,7 @@
                                 <div class="col-md-6">
                                     <label>
                                         <span>
-                                            <i class="fa fa-location-arrow"></i> Địa điểm:
+                                            <i class="fa fa-map-marker"></i> Địa điểm làm việc:
                                         </span>
                                         <select data-placeholder="Chọn..." name="province">
                                             <option value="">Tất cả</option>
@@ -57,7 +57,7 @@
                                 <div class="col-md-6">
                                     <label>
                                         <span>
-                                            <i class="fa fa-graduation-cap"></i> Chuyên khoa:
+                                            <i class="fa fa-user-md"></i> Chuyên khoa:
                                         </span>
                                         <select data-placeholder="Chọn..." name="specialization">
                                             <option value="">Tất cả</option>
@@ -85,18 +85,41 @@
                 </div>
             </div>
             <div class="row">
+                <!--should be 10 item per page-->
+
                 <div class="col-md-6">
                     <figure class="card">
                         <div class="split">
                             <img class="split__img card__image" src="https://placehold.it/200" />
                             <figcaption class="split__figure">
-                                <h2 class="title">BS. le hoang <span>Hung</span></h2>
+                                <div class="visible-xs">
+                                    <h2 class="title">bs. lê hoàng <span>hưng</span></h2>
+                                </div>
+                                <div class="visible-sm visible-md visible-lg">
+                                    <h2 class="title">bác sĩ - lê hoàng <span>hưng</span></h2>
+                                </div>
+
                                 <div class="detail">
-                                    <div class="detail-line"><span class="box">Chuyên khoa</span>Tai Mũi Họng</div>
-                                    <div class="detail-line"><i class="fa fa-certificate"></i>Cc</div>
-                                    <div class="detail-line"><i class="fa fa-home"></i>Hà Nội</div>
-                                    <div class="detail-line"><i class="fa fa-clock-o"></i>3 năm kinh nghiệm</div>
-                                    <div class="detail-line"><i class="fa fa-building"></i>Hn</div>
+                                    <div class="detail-line">
+                                        <div class="visible-xs">
+                                            <i class="fa fa-user-md" title="Chuyên khoa"></i>Tai Mũi Họng
+                                        </div>
+                                        <div class="visible-sm visible-md visible-lg">
+                                            <span class="box">Chuyên khoa</span>Tai Mũi Họng
+                                        </div>
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-university" title="Chứng chỉ nghề nghiệp"></i>Lorem ipsum
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-home" title="Quê quán"></i>Hà Nội
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-clock-o" title="Số năm kinh nghiệm"></i>3 năm kinh nghiệm
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-map-marker" title="Nơi làm việc"></i>Hn
+                                    </div>
                                 </div>
                             </figcaption>
                         </div>
@@ -112,13 +135,34 @@
                         <div class="split">
                             <img class="split__img card__image" src="https://placehold.it/200" />
                             <figcaption class="split__figure">
-                                <h2 class="title">BS. le hoang <span>Hung</span></h2>
+                                <div class="visible-xs">
+                                    <h2 class="title">bs. lê hoàng <span>hưng</span></h2>
+                                </div>
+                                <div class="visible-sm visible-md visible-lg">
+                                    <h2 class="title">bác sĩ - lê hoàng <span>hưng</span></h2>
+                                </div>
+
                                 <div class="detail">
-                                    <div class="detail-line"><span class="box">Chuyên khoa</span>Tai Mũi Họng</div>
-                                    <div class="detail-line"><i class="fa fa-certificate"></i>Cc</div>
-                                    <div class="detail-line"><i class="fa fa-home"></i>Hà Nội</div>
-                                    <div class="detail-line"><i class="fa fa-clock-o"></i>3 năm kinh nghiệm</div>
-                                    <div class="detail-line"><i class="fa fa-building"></i>Hn</div>
+                                    <div class="detail-line">
+                                        <div class="visible-xs">
+                                            <i class="fa fa-user-md" title="Chuyên khoa"></i>Tai Mũi Họng
+                                        </div>
+                                        <div class="visible-sm visible-md visible-lg">
+                                            <span class="box">Chuyên khoa</span>Tai Mũi Họng
+                                        </div>
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-university" title="Chứng chỉ nghề nghiệp"></i>Lorem ipsum
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-home" title="Quê quán"></i>Hà Nội
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-clock-o" title="Số năm kinh nghiệm"></i>3 năm kinh nghiệm
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-map-marker" title="Nơi làm việc"></i>Hn
+                                    </div>
                                 </div>
                             </figcaption>
                         </div>
@@ -128,19 +172,39 @@
                         </div>
                     </figure>
                 </div>
-
                 <div class="col-md-6">
                     <figure class="card">
                         <div class="split">
                             <img class="split__img card__image" src="https://placehold.it/200" />
                             <figcaption class="split__figure">
-                                <h2 class="title">BS. le hoang <span>Hung</span></h2>
+                                <div class="visible-xs">
+                                    <h2 class="title">bs. lê hoàng <span>hưng</span></h2>
+                                </div>
+                                <div class="visible-sm visible-md visible-lg">
+                                    <h2 class="title">bác sĩ - lê hoàng <span>hưng</span></h2>
+                                </div>
+
                                 <div class="detail">
-                                    <div class="detail-line"><span class="box">Chuyên khoa</span>Tai Mũi Họng</div>
-                                    <div class="detail-line"><i class="fa fa-certificate"></i>Cc</div>
-                                    <div class="detail-line"><i class="fa fa-home"></i>Hà Nội</div>
-                                    <div class="detail-line"><i class="fa fa-clock-o"></i>3 năm kinh nghiệm</div>
-                                    <div class="detail-line"><i class="fa fa-building"></i>Hn</div>
+                                    <div class="detail-line">
+                                        <div class="visible-xs">
+                                            <i class="fa fa-user-md" title="Chuyên khoa"></i>Tai Mũi Họng
+                                        </div>
+                                        <div class="visible-sm visible-md visible-lg">
+                                            <span class="box">Chuyên khoa</span>Tai Mũi Họng
+                                        </div>
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-university" title="Chứng chỉ nghề nghiệp"></i>Lorem ipsum
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-home" title="Quê quán"></i>Hà Nội
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-clock-o" title="Số năm kinh nghiệm"></i>3 năm kinh nghiệm
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-map-marker" title="Nơi làm việc"></i>Hn
+                                    </div>
                                 </div>
                             </figcaption>
                         </div>
@@ -150,19 +214,39 @@
                         </div>
                     </figure>
                 </div>
-
                 <div class="col-md-6">
                     <figure class="card">
                         <div class="split">
                             <img class="split__img card__image" src="https://placehold.it/200" />
                             <figcaption class="split__figure">
-                                <h2 class="title">BS. le hoang <span>Hung</span></h2>
+                                <div class="visible-xs">
+                                    <h2 class="title">bs. lê hoàng <span>hưng</span></h2>
+                                </div>
+                                <div class="visible-sm visible-md visible-lg">
+                                    <h2 class="title">bác sĩ - lê hoàng <span>hưng</span></h2>
+                                </div>
+
                                 <div class="detail">
-                                    <div class="detail-line"><span class="box">Chuyên khoa</span>Tai Mũi Họng</div>
-                                    <div class="detail-line"><i class="fa fa-certificate"></i>Cc</div>
-                                    <div class="detail-line"><i class="fa fa-home"></i>Hà Nội</div>
-                                    <div class="detail-line"><i class="fa fa-clock-o"></i>3 năm kinh nghiệm</div>
-                                    <div class="detail-line"><i class="fa fa-building"></i>Hn</div>
+                                    <div class="detail-line">
+                                        <div class="visible-xs">
+                                            <i class="fa fa-user-md" title="Chuyên khoa"></i>Tai Mũi Họng
+                                        </div>
+                                        <div class="visible-sm visible-md visible-lg">
+                                            <span class="box">Chuyên khoa</span>Tai Mũi Họng
+                                        </div>
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-university" title="Chứng chỉ nghề nghiệp"></i>Lorem ipsum
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-home" title="Quê quán"></i>Hà Nội
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-clock-o" title="Số năm kinh nghiệm"></i>3 năm kinh nghiệm
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-map-marker" title="Nơi làm việc"></i>Hn
+                                    </div>
                                 </div>
                             </figcaption>
                         </div>
@@ -172,19 +256,249 @@
                         </div>
                     </figure>
                 </div>
-
                 <div class="col-md-6">
                     <figure class="card">
                         <div class="split">
                             <img class="split__img card__image" src="https://placehold.it/200" />
                             <figcaption class="split__figure">
-                                <h2 class="title">BS. le hoang <span>Hung</span></h2>
+                                <div class="visible-xs">
+                                    <h2 class="title">bs. lê hoàng <span>hưng</span></h2>
+                                </div>
+                                <div class="visible-sm visible-md visible-lg">
+                                    <h2 class="title">bác sĩ - lê hoàng <span>hưng</span></h2>
+                                </div>
+
                                 <div class="detail">
-                                    <div class="detail-line"><span class="box">Chuyên khoa</span>Tai Mũi Họng</div>
-                                    <div class="detail-line"><i class="fa fa-certificate"></i>Cc</div>
-                                    <div class="detail-line"><i class="fa fa-home"></i>Hà Nội</div>
-                                    <div class="detail-line"><i class="fa fa-clock-o"></i>3 năm kinh nghiệm</div>
-                                    <div class="detail-line"><i class="fa fa-building"></i>Hn</div>
+                                    <div class="detail-line">
+                                        <div class="visible-xs">
+                                            <i class="fa fa-user-md" title="Chuyên khoa"></i>Tai Mũi Họng
+                                        </div>
+                                        <div class="visible-sm visible-md visible-lg">
+                                            <span class="box">Chuyên khoa</span>Tai Mũi Họng
+                                        </div>
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-university" title="Chứng chỉ nghề nghiệp"></i>Lorem ipsum
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-home" title="Quê quán"></i>Hà Nội
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-clock-o" title="Số năm kinh nghiệm"></i>3 năm kinh nghiệm
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-map-marker" title="Nơi làm việc"></i>Hn
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </div>
+                        <div class="card__action-bar">
+                            <button class="card__button">Xem hồ sơ</button>
+                            <button class="card__button">Tư vấn</button>
+                        </div>
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <figure class="card">
+                        <div class="split">
+                            <img class="split__img card__image" src="https://placehold.it/200" />
+                            <figcaption class="split__figure">
+                                <div class="visible-xs">
+                                    <h2 class="title">bs. lê hoàng <span>hưng</span></h2>
+                                </div>
+                                <div class="visible-sm visible-md visible-lg">
+                                    <h2 class="title">bác sĩ - lê hoàng <span>hưng</span></h2>
+                                </div>
+
+                                <div class="detail">
+                                    <div class="detail-line">
+                                        <div class="visible-xs">
+                                            <i class="fa fa-user-md" title="Chuyên khoa"></i>Tai Mũi Họng
+                                        </div>
+                                        <div class="visible-sm visible-md visible-lg">
+                                            <span class="box">Chuyên khoa</span>Tai Mũi Họng
+                                        </div>
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-university" title="Chứng chỉ nghề nghiệp"></i>Lorem ipsum
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-home" title="Quê quán"></i>Hà Nội
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-clock-o" title="Số năm kinh nghiệm"></i>3 năm kinh nghiệm
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-map-marker" title="Nơi làm việc"></i>Hn
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </div>
+                        <div class="card__action-bar">
+                            <button class="card__button">Xem hồ sơ</button>
+                            <button class="card__button">Tư vấn</button>
+                        </div>
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <figure class="card">
+                        <div class="split">
+                            <img class="split__img card__image" src="https://placehold.it/200" />
+                            <figcaption class="split__figure">
+                                <div class="visible-xs">
+                                    <h2 class="title">bs. lê hoàng <span>hưng</span></h2>
+                                </div>
+                                <div class="visible-sm visible-md visible-lg">
+                                    <h2 class="title">bác sĩ - lê hoàng <span>hưng</span></h2>
+                                </div>
+
+                                <div class="detail">
+                                    <div class="detail-line">
+                                        <div class="visible-xs">
+                                            <i class="fa fa-user-md" title="Chuyên khoa"></i>Tai Mũi Họng
+                                        </div>
+                                        <div class="visible-sm visible-md visible-lg">
+                                            <span class="box">Chuyên khoa</span>Tai Mũi Họng
+                                        </div>
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-university" title="Chứng chỉ nghề nghiệp"></i>Lorem ipsum
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-home" title="Quê quán"></i>Hà Nội
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-clock-o" title="Số năm kinh nghiệm"></i>3 năm kinh nghiệm
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-map-marker" title="Nơi làm việc"></i>Hn
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </div>
+                        <div class="card__action-bar">
+                            <button class="card__button">Xem hồ sơ</button>
+                            <button class="card__button">Tư vấn</button>
+                        </div>
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <figure class="card">
+                        <div class="split">
+                            <img class="split__img card__image" src="https://placehold.it/200" />
+                            <figcaption class="split__figure">
+                                <div class="visible-xs">
+                                    <h2 class="title">bs. lê hoàng <span>hưng</span></h2>
+                                </div>
+                                <div class="visible-sm visible-md visible-lg">
+                                    <h2 class="title">bác sĩ - lê hoàng <span>hưng</span></h2>
+                                </div>
+
+                                <div class="detail">
+                                    <div class="detail-line">
+                                        <div class="visible-xs">
+                                            <i class="fa fa-user-md" title="Chuyên khoa"></i>Tai Mũi Họng
+                                        </div>
+                                        <div class="visible-sm visible-md visible-lg">
+                                            <span class="box">Chuyên khoa</span>Tai Mũi Họng
+                                        </div>
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-university" title="Chứng chỉ nghề nghiệp"></i>Lorem ipsum
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-home" title="Quê quán"></i>Hà Nội
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-clock-o" title="Số năm kinh nghiệm"></i>3 năm kinh nghiệm
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-map-marker" title="Nơi làm việc"></i>Hn
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </div>
+                        <div class="card__action-bar">
+                            <button class="card__button">Xem hồ sơ</button>
+                            <button class="card__button">Tư vấn</button>
+                        </div>
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <figure class="card">
+                        <div class="split">
+                            <img class="split__img card__image" src="https://placehold.it/200" />
+                            <figcaption class="split__figure">
+                                <div class="visible-xs">
+                                    <h2 class="title">bs. lê hoàng <span>hưng</span></h2>
+                                </div>
+                                <div class="visible-sm visible-md visible-lg">
+                                    <h2 class="title">bác sĩ - lê hoàng <span>hưng</span></h2>
+                                </div>
+
+                                <div class="detail">
+                                    <div class="detail-line">
+                                        <div class="visible-xs">
+                                            <i class="fa fa-user-md" title="Chuyên khoa"></i>Tai Mũi Họng
+                                        </div>
+                                        <div class="visible-sm visible-md visible-lg">
+                                            <span class="box">Chuyên khoa</span>Tai Mũi Họng
+                                        </div>
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-university" title="Chứng chỉ nghề nghiệp"></i>Lorem ipsum
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-home" title="Quê quán"></i>Hà Nội
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-clock-o" title="Số năm kinh nghiệm"></i>3 năm kinh nghiệm
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-map-marker" title="Nơi làm việc"></i>Hn
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </div>
+                        <div class="card__action-bar">
+                            <button class="card__button">Xem hồ sơ</button>
+                            <button class="card__button">Tư vấn</button>
+                        </div>
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <figure class="card">
+                        <div class="split">
+                            <img class="split__img card__image" src="https://placehold.it/200" />
+                            <figcaption class="split__figure">
+                                <div class="visible-xs">
+                                    <h2 class="title">bs. lê hoàng <span>hưng</span></h2>
+                                </div>
+                                <div class="visible-sm visible-md visible-lg">
+                                    <h2 class="title">bác sĩ - lê hoàng <span>hưng</span></h2>
+                                </div>
+
+                                <div class="detail">
+                                    <div class="detail-line">
+                                        <div class="visible-xs">
+                                            <i class="fa fa-user-md" title="Chuyên khoa"></i>Tai Mũi Họng
+                                        </div>
+                                        <div class="visible-sm visible-md visible-lg">
+                                            <span class="box">Chuyên khoa</span>Tai Mũi Họng
+                                        </div>
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-university" title="Chứng chỉ nghề nghiệp"></i>Lorem ipsum
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-home" title="Quê quán"></i>Hà Nội
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-clock-o" title="Số năm kinh nghiệm"></i>3 năm kinh nghiệm
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-map-marker" title="Nơi làm việc"></i>Hn
+                                    </div>
                                 </div>
                             </figcaption>
                         </div>
@@ -197,6 +511,8 @@
             </div>
 
             <div id="paginator" class="row">
+                <!--should be 10 item per page-->
+
                 <div class="col-md-12">
                     <nav role="navigation">
                         <ul class="cd-pagination move-buttons">
