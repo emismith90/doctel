@@ -7,51 +7,62 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-          crossorigin="anonymous">
+        crossorigin="anonymous">
     <link rel="stylesheet" href="/resources/styles/page.css">
     <link rel="stylesheet" href="/resources/styles/video.css">
+
+
 </head>
 
 <body>
-    <section class="area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 content">
+    <section>
+        <div class="full-image">
+            <div class="full-image__image" style="background-image:url(/resources/assets/banner/banner1.jpg)"></div>
+            <div class="full-image__inner">
+                <div class="container">
                     <div class="video-player">
                         <div class="video-player__video">
                             <div class="video-player__frame video-player__frame--sized" style="padding-bottom: 56.25%;">
-                                <iframe name="video-player-frame" width="640" height="360" src="https://www.youtube.com/embed/sQ_cKwfdtb8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+                                <iframe name="video-player-frame" width="640" height="360" src="https://www.youtube.com/embed/sQ_cKwfdtb8?rel=0&amp;showinfo=0"
+                                    frameborder="0" allowfullscreen=""></iframe>
                             </div>
                         </div>
                         <div class="video-player__controls">
-                            <div class="video-player__controls-title">This video has a headline and it goes here.</div>
-                            <p class="video-player__controls-label">Choose version:</p>
+                            <div class="video-player__controls-title">Doctel - slogan. Lorem ipsum</div>
+                            <p class="video-player__controls-label">Chọn phiên bản:</p>
                             <div class="video-player__buttons">
-                                <a href="https://www.youtube.com/embed/sQ_cKwfdtb8?rel=0&amp;showinfo=0&amp;autoplay=1" target="video-player-frame" class="video--button button--small button--brand video-player__button">
+                                <a href="https://www.youtube.com/embed/sQ_cKwfdtb8?rel=0&amp;showinfo=0&amp;autoplay=1" target="video-player-frame" class="video--button button--small video-player__button button--active">
                                     <svg class="icon icon--pause" width="12px" height="15px" viewBox="0 0 12 15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <use xlink:href="#video-player-pause"></use>
                                     </svg>
-                                    Overview - 30 sec
+                                    Rút gọn - 30s
                                 </a>
                                 <a href="https://www.youtube.com/embed/mMzRZS5JzsY?rel=0&amp;showinfo=0&amp;autoplay=1" target="video-player-frame" class="video--button button--small video-player__button">
                                     <svg class="icon icon--play" width="13px" height="16px" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <use xlink:href="#video-player-play"></use>
                                     </svg>
-                                    In-depth - 5 min
+                                    Đầy đủ - 5p
                                 </a>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
 
-        <svg width="13" height="16" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <path id="video-player-play" d="M1.29 15.143c-.481.281-.872.055-.872-.485V1.494c0-.549.388-.767.871-.485l11.24 6.557c.482.281.484.736 0 1.018L1.29 15.143z" fill-rule="evenodd"></path>
-                <g id="video-player-pause" fill-rule="evenodd"><rect y=".994" width="5" height="14" rx="1"></rect><rect x="7" y=".994" width="5" height="14" rx="1"></rect></g>
-            </defs>
-        </svg>
+        <div style="display: none !important;">
+            <svg width="13" height="16" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <path id="video-player-play" d="M1.29 15.143c-.481.281-.872.055-.872-.485V1.494c0-.549.388-.767.871-.485l11.24 6.557c.482.281.484.736 0 1.018L1.29 15.143z"
+                        fill-rule="evenodd"></path>
+                    <g id="video-player-pause" fill-rule="evenodd">
+                        <rect y=".994" width="5" height="14" rx="1"></rect>
+                        <rect x="7" y=".994" width="5" height="14" rx="1"></rect>
+                    </g>
+                </defs>
+            </svg>
+        </div>
     </section>
 </body>
 

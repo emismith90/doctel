@@ -1,4 +1,37 @@
-﻿.video-player__frame {
+﻿.full-image {
+  position: relative;
+  min-height: 8.3875em;
+  display: table;
+  width: 100%;
+  }
+  .full-image__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    opacity: 0.85; 
+
+    -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+  }
+  .full-image__inner {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    z-index: 1; }
+
+    .video-player {
+        padding: 40px 0;
+    }
+
+.video-player__frame {
     position: relative;
 }
 
@@ -18,9 +51,15 @@
     overflow: hidden;
 }
 
+
+.video-player__controls-title, .video-player__controls-label {
+    padding: 6px;
+    background: rgba(255, 255,255, .5);
+}
 .video-player__controls-title {
     font-size: 28px;
     font-weight: 300;
+    margin-bottom: 20px;
 }
 
 .video-player__controls-label {
@@ -86,8 +125,8 @@
     margin-right: 0.55556rem;
 }
 
-.button--brand {
-    background-color: #e54a1a !important;
+.button--active {
+    background-color: rgba(229, 74, 26, .7) !important;
 }
 
 .button--small {
@@ -107,7 +146,7 @@
     font-weight: 700;
     line-height: 1;
     padding: 1em 1em 0.9em;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     background-color: #3e4d5c;
     color: #fafafa;
     fill: currentColor;

@@ -32,6 +32,10 @@
     text-align: justify;
 }
 
+.split__content h3{
+    text-align: center;
+}
+
 @media (min-width: 1001px) {
     .circle {
         margin-left: 0%;

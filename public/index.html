@@ -1,0 +1,356 @@
+﻿<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/resources/styles/page.css">
+    <link rel="stylesheet" href="/resources/styles/form-controls.css">
+
+    <link rel="stylesheet" href="/resources/styles/video.css">
+    <link rel="stylesheet" href="/resources/styles/search.css">
+    <link rel="stylesheet" href="/resources/styles/work-flow.css">
+    <link rel="stylesheet" href="/resources/styles/image-text.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="
+        crossorigin="anonymous"></script>
+    <script src="/resources/scripts/work-flow.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div style="text-align: center;border-bottom: 1px solid rgba(0,0,0,0.2);font-size:30px;color:rgba(0,0,0,0.2)">HEADER</div>
+    </header>
+
+    <section>
+        <div class="full-image">
+            <div class="full-image__image" style="background-image:url(/resources/assets/banner/banner1.jpg)"></div>
+            <div class="full-image__inner">
+                <div class="container">
+                    <div class="video-player">
+                        <div class="video-player__video">
+                            <div class="video-player__frame video-player__frame--sized" style="padding-bottom: 56.25%;">
+                                <iframe name="video-player-frame" width="640" height="360" src="https://www.youtube.com/embed/sQ_cKwfdtb8?rel=0&amp;showinfo=0"
+                                    frameborder="0" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                        <div class="video-player__controls">
+                            <div class="video-player__controls-title">Doctel - slogan. Lorem ipsum</div>
+                            <p class="video-player__controls-label">Chọn phiên bản:</p>
+                            <div class="video-player__buttons">
+                                <a href="https://www.youtube.com/embed/sQ_cKwfdtb8?rel=0&amp;showinfo=0&amp;autoplay=1" target="video-player-frame" class="video--button button--small video-player__button button--active">
+                                    <svg class="icon icon--pause" width="12px" height="15px" viewBox="0 0 12 15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <use xlink:href="#video-player-pause"></use>
+                                    </svg>
+                                    Rút gọn - 30s
+                                </a>
+                                <a href="https://www.youtube.com/embed/mMzRZS5JzsY?rel=0&amp;showinfo=0&amp;autoplay=1" target="video-player-frame" class="video--button button--small video-player__button">
+                                    <svg class="icon icon--play" width="13px" height="16px" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <use xlink:href="#video-player-play"></use>
+                                    </svg>
+                                    Đầy đủ - 5p
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 content" id="team">
+                    <h1>Tìm kiếm <strong>Bác sĩ</strong></h1>
+                    <div class="d-subtext"><strong>4 Bác sĩ</strong> tham gia tư vấn và hơn thế nữa..</div>
+                    <div class="d-text">Tìm kiếm và tư vấn cùng Bác sĩ <strong>mọi lúc</strong>, <strong>mọi nơi</strong>.</div>
+
+                    <form class="form-search" action="/modules/search/searchdoctor" method="get">
+                        <!-- RENDER SEARCH VIEW-->
+                        <div class="search-box">
+                            <i class="fa fa-search"></i>
+                            <input type="search" id="searchText" name="searchText" placeholder="Nhập tên Bác sĩ hoặc triệu chứng">
+                            <!--<button type="submit">Tìm Kiếm</button>-->
+                        </div>
+
+                        <div class="advance-search">
+                            <div class="d-subtext">
+                                Nâng cao
+                                <hr>
+                            </div>
+
+                            <div class="row" id="demo">
+                                <div class="col-md-6">
+                                    <label>
+                                        <span>
+                                            <i class="fa fa-map-marker"></i> Địa điểm làm việc:
+                                        </span>
+                                        <select data-placeholder="Chọn..." name="province">
+                                            <option value="">Tất cả</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </label>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <label>
+                                        <span>
+                                            <i class="fa fa-graduation-cap"></i> Chuyên khoa:
+                                        </span>
+                                        <select data-placeholder="Chọn..." name="specialization">
+                                            <option value="">Tất cả</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="advance-search-submit">
+                                <button type="submit">Tìm Kiếm <i class="m-icon-swapright m-icon-white"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="area odd">
+        <div class="device-xs visible-xs"></div>
+        <div class="device-sm visible-sm"></div>
+        <div class="device-md visible-md"></div>
+        <div class="device-lg visible-lg"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 content align-center" id="benefits">
+                    <h1>Phương thức <strong>hoạt động</strong></h1>
+                    <div class="row">
+                        <div class="col col-md-6">
+                            <div class="heading">Bạn muốn được tư vấn về sức khỏe</div>
+                            <div class="sub-heading">Đội ngũ Bác sĩ tài năng nhiệt huyết</div>
+                            <div class="flow-row-1">
+                                <div class="flow-item-left">
+                                    <div class="icon">
+                                        <img src="/resources/assets/work-flow/account.png" alt="Tạo tài khoản" />
+                                    </div>
+                                </div>
+                                <div class="flow-item-content">
+                                    <span class="bullet">1</span>
+                                    <span class="content">
+                                        <div class="text">Tạo tài khoản</div>
+                                        <div class="sub-text">
+                                            Tạo tài khoản một cách nhanh chóng.
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flow-row-2">
+                                <div class="flow-item-left">
+                                    <div class="icon">
+                                        <img src="/resources/assets/work-flow/search.png" alt="Tìm Bác sĩ" />
+                                    </div>
+                                </div>
+                                <div class="flow-item-content">
+                                    <span class="bullet">2</span>
+                                    <span class="content">
+                                        <div class="text">Tìm Bác sĩ</div>
+                                        <div class="sub-text">
+                                            Nhanh chóng tìm và gửi câu hỏi đến Bác sĩ phù hợp.
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flow-row-3">
+                                <div class="flow-item-left">
+                                    <div class="icon">
+                                        <img src="/resources/assets/work-flow/payment.png" alt="Thanh toán phí" />
+                                    </div>
+                                </div>
+                                <div class="flow-item-content">
+                                    <span class="bullet">3</span>
+                                    <span class="content">
+                                        <div class="text">Thanh toán phí</div>
+                                        <div class="sub-text">
+                                            Chọn gói tư vấn phù hợp và thực hiên thanh toán đơn giản, dễ dàng.
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flow-row-4">
+                                <div class="flow-item-left">
+                                    <div class="icon">
+                                        <img src="/resources/assets/work-flow/chatting.png" alt="Nhận tư vấn từ Bác sĩ" />
+                                    </div>
+                                </div>
+                                <div class="flow-item-content">
+                                    <span class="bullet">4</span>
+                                    <span class="content">
+                                        <div class="text">Nhận tư vấn từ Bác sĩ</div>
+                                        <div class="sub-text">
+                                            Bác sĩ sẽ tìm hiểu và đưa ra tư vấn cho bạn thông qua tin nhắn, hình ảnh hoặc đàm thoại.
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-6 padding-top-column">
+                            <div class="heading">Bạn muốn tư vấn về sức khỏe</div>
+                            <div class="sub-heading">Có rất nhiều người cần đến bạn</div>
+
+                            <div class="flow-row-1">
+                                <div class="flow-item-left">
+                                    <div class="icon">
+                                        <img src="/resources/assets/work-flow/account.png" alt="Tạo tài khoản" />
+                                    </div>
+                                </div>
+                                <div class="flow-item-content">
+                                    <span class="bullet">1</span>
+                                    <span class="content">
+                                        <div class="text">Tạo tài khoản</div>
+                                        <div class="sub-text">
+                                            Tạo tài khoản một cách nhanh chóng.
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flow-row-2">
+                                <div class="flow-item-left">
+                                    <div class="icon">
+                                        <img src="/resources/assets/work-flow/question.png" alt="Nhận câu hỏi" />
+                                    </div>
+                                </div>
+                                <div class="flow-item-content">
+                                    <span class="bullet">2</span>
+                                    <span class="content">
+                                        <div class="text">Nhận câu hỏi</div>
+                                        <div class="sub-text">
+                                            Sau khi thông tin của bạn đã được xác thực, các bệnh nhân sẽ gửi câu hỏi đến cho bạn.
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flow-row-3">
+                                <div class="flow-item-left">
+                                    <div class="icon">
+                                        <img src="/resources/assets/work-flow/chatting.png" alt="Thực hiện tư vấn" />
+                                    </div>
+                                </div>
+                                <div class="flow-item-content">
+                                    <span class="bullet">3</span>
+                                    <span class="content">
+                                        <div class="text">Thực hiện tư vấn</div>
+                                        <div class="sub-text">
+                                            Thực hiện trò chuyện và đwa ra tư vấn cho bệnh nhân.
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flow-row-4">
+                                <div class="flow-item-left">
+                                    <div class="icon">
+                                        <img src="/resources/assets/work-flow/money.png" alt="Nhận thù lao" />
+                                    </div>
+                                </div>
+                                <div class="flow-item-content">
+                                    <span class="bullet">4</span>
+                                    <span class="content">
+                                        <div class="text">Nhận thù lao</div>
+                                        <div class="sub-text">
+                                            Nhận thù lao từ hệ thống sau khi hoàn thành tư vấn.
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 content">
+                    <h1>Bác sĩ <strong>của tháng</strong></h1>
+
+                    <div class="split">
+                        <div class="split__figure">
+                            <img src="//placehold.it/200" class="split__figure-img circle center" alt="" />
+                        </div>
+                        <div class="split__content">
+                            <h3>Tựa đề bài viết</h3>
+                            <p class="content-truncate">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                                incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
+                                quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+                                molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Sed
+                                ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                                aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                                voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                                laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
+                                qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum
+                                fugiat quo voluptas nulla pariatur? Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
+                                et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+                                sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                                adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                                aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
+                                qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum
+                                fugiat quo voluptas nulla pariatur?
+                            </p>
+                            <button class="no-border">Đọc thêm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div style="background-color:black; text-align: center;padding:3em 0;font-size:30px;color:rgba(255,255,255,0.2)">FOOTER</div>
+    </footer>
+
+    <div style="display: none !important;">
+        <svg width="13" height="16" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path id="video-player-play" d="M1.29 15.143c-.481.281-.872.055-.872-.485V1.494c0-.549.388-.767.871-.485l11.24 6.557c.482.281.484.736 0 1.018L1.29 15.143z"
+                    fill-rule="evenodd"></path>
+                <g id="video-player-pause" fill-rule="evenodd">
+                    <rect y=".994" width="5" height="14" rx="1"></rect>
+                    <rect x="7" y=".994" width="5" height="14" rx="1"></rect>
+                </g>
+            </defs>
+        </svg>
+    </div>
+</body>
+
+</html>
