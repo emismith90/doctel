@@ -1,9 +1,6 @@
 $(document).ready(function () {
     forceRowHeightEquality();
-
-    // window.onresize = function (event) {
-    //     forceRowHeightEquality();
-    // };
+    initSlider();
 });
 
 function forceRowHeightEquality() {
@@ -35,4 +32,26 @@ function forceRowHeightEquality() {
 
 function isBreakpoint(alias) {
     return $('.device-' + alias).is(':visible');
+}
+
+function initSlider() {
+    $('.js-slider').slick({
+        dots: false,
+        prevArrow: false,
+        nextArrow: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+            {
+                breakpoint: 1001,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true
+                }
+            }
+        ]
+    });
 }

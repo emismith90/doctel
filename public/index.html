@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
         crossorigin="anonymous">
 
+    <link rel="stylesheet" href="/resources/slick/slick.css">
+    <link rel="stylesheet" href="/resources/slick/slick-theme.css">
+
     <link rel="stylesheet" href="/resources/styles/page.css">
     <link rel="stylesheet" href="/resources/styles/form-controls.css">
 
@@ -18,12 +21,12 @@
     <link rel="stylesheet" href="/resources/styles/search.css">
     <link rel="stylesheet" href="/resources/styles/work-flow.css">
     <link rel="stylesheet" href="/resources/styles/image-text.css">
+   
 
     <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/resources/slick/slick.min.js"></script>
     <script src="/resources/scripts/work-flow.js"></script>
-
-
 </head>
 
 <body>
@@ -134,151 +137,149 @@
         <div class="device-lg visible-lg"></div>
 
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 content align-center" id="benefits">
-                    <h1>Phương thức <strong>hoạt động</strong></h1>
-                    <div class="row">
-                        <div class="col col-md-6">
-                            <div class="heading">Bạn muốn được tư vấn về sức khỏe</div>
-                            <div class="sub-heading">Đội ngũ Bác sĩ tài năng nhiệt huyết</div>
-                            <div class="flow-row-1">
-                                <div class="flow-item-left">
-                                    <div class="icon">
-                                        <img src="/resources/assets/work-flow/account.png" alt="Tạo tài khoản" />
-                                    </div>
+            <div class="content align-center" id="benefits">
+                <h1>Phương thức <strong>hoạt động</strong></h1>
+                <div class="js-slider">
+                    <div class="content-half">
+                        <div class="heading">Bạn muốn được tư vấn về sức khỏe</div>
+                        <div class="sub-heading">Đội ngũ Bác sĩ tài năng nhiệt huyết</div>
+                        <div class="flow-row-1">
+                            <div class="flow-item-left">
+                                <div class="icon">
+                                    <img src="/resources/assets/work-flow/account.png" alt="Tạo tài khoản" />
                                 </div>
-                                <div class="flow-item-content">
-                                    <span class="bullet">1</span>
-                                    <span class="content">
+                            </div>
+                            <div class="flow-item-content">
+                                <span class="bullet">1</span>
+                                <span class="content">
                                         <div class="text">Tạo tài khoản</div>
                                         <div class="sub-text">
                                             Tạo tài khoản một cách nhanh chóng.
                                         </div>
                                     </span>
+                            </div>
+                        </div>
+
+                        <div class="flow-row-2">
+                            <div class="flow-item-left">
+                                <div class="icon">
+                                    <img src="/resources/assets/work-flow/search.png" alt="Tìm Bác sĩ" />
                                 </div>
                             </div>
-
-                            <div class="flow-row-2">
-                                <div class="flow-item-left">
-                                    <div class="icon">
-                                        <img src="/resources/assets/work-flow/search.png" alt="Tìm Bác sĩ" />
-                                    </div>
-                                </div>
-                                <div class="flow-item-content">
-                                    <span class="bullet">2</span>
-                                    <span class="content">
+                            <div class="flow-item-content">
+                                <span class="bullet">2</span>
+                                <span class="content">
                                         <div class="text">Tìm Bác sĩ</div>
                                         <div class="sub-text">
                                             Nhanh chóng tìm và gửi câu hỏi đến Bác sĩ phù hợp.
                                         </div>
                                     </span>
+                            </div>
+                        </div>
+
+                        <div class="flow-row-3">
+                            <div class="flow-item-left">
+                                <div class="icon">
+                                    <img src="/resources/assets/work-flow/payment.png" alt="Thanh toán phí" />
                                 </div>
                             </div>
-
-                            <div class="flow-row-3">
-                                <div class="flow-item-left">
-                                    <div class="icon">
-                                        <img src="/resources/assets/work-flow/payment.png" alt="Thanh toán phí" />
-                                    </div>
-                                </div>
-                                <div class="flow-item-content">
-                                    <span class="bullet">3</span>
-                                    <span class="content">
+                            <div class="flow-item-content">
+                                <span class="bullet">3</span>
+                                <span class="content">
                                         <div class="text">Thanh toán phí</div>
                                         <div class="sub-text">
                                             Chọn gói tư vấn phù hợp và thực hiên thanh toán đơn giản, dễ dàng.
                                         </div>
                                     </span>
+                            </div>
+                        </div>
+
+                        <div class="flow-row-4">
+                            <div class="flow-item-left">
+                                <div class="icon">
+                                    <img src="/resources/assets/work-flow/chatting.png" alt="Nhận tư vấn từ Bác sĩ" />
                                 </div>
                             </div>
-
-                            <div class="flow-row-4">
-                                <div class="flow-item-left">
-                                    <div class="icon">
-                                        <img src="/resources/assets/work-flow/chatting.png" alt="Nhận tư vấn từ Bác sĩ" />
-                                    </div>
-                                </div>
-                                <div class="flow-item-content">
-                                    <span class="bullet">4</span>
-                                    <span class="content">
+                            <div class="flow-item-content">
+                                <span class="bullet">4</span>
+                                <span class="content">
                                         <div class="text">Nhận tư vấn từ Bác sĩ</div>
                                         <div class="sub-text">
                                             Bác sĩ sẽ tìm hiểu và đưa ra tư vấn cho bạn thông qua tin nhắn, hình ảnh hoặc đàm thoại.
                                         </div>
                                     </span>
-                                </div>
                             </div>
                         </div>
-                        <div class="col col-md-6 padding-top-column">
-                            <div class="heading">Bạn muốn tư vấn về sức khỏe</div>
-                            <div class="sub-heading">Có rất nhiều người cần đến bạn</div>
+                    </div>
+                    <div class="content-half">
+                        <div class="heading">Bạn muốn tư vấn về sức khỏe</div>
+                        <div class="sub-heading">Có rất nhiều người cần đến bạn</div>
 
-                            <div class="flow-row-1">
-                                <div class="flow-item-left">
-                                    <div class="icon">
-                                        <img src="/resources/assets/work-flow/account.png" alt="Tạo tài khoản" />
-                                    </div>
+                        <div class="flow-row-1">
+                            <div class="flow-item-left">
+                                <div class="icon">
+                                    <img src="/resources/assets/work-flow/account.png" alt="Tạo tài khoản" />
                                 </div>
-                                <div class="flow-item-content">
-                                    <span class="bullet">1</span>
-                                    <span class="content">
+                            </div>
+                            <div class="flow-item-content">
+                                <span class="bullet">1</span>
+                                <span class="content">
                                         <div class="text">Tạo tài khoản</div>
                                         <div class="sub-text">
                                             Tạo tài khoản một cách nhanh chóng.
                                         </div>
                                     </span>
+                            </div>
+                        </div>
+
+                        <div class="flow-row-2">
+                            <div class="flow-item-left">
+                                <div class="icon">
+                                    <img src="/resources/assets/work-flow/question.png" alt="Nhận câu hỏi" />
                                 </div>
                             </div>
-
-                            <div class="flow-row-2">
-                                <div class="flow-item-left">
-                                    <div class="icon">
-                                        <img src="/resources/assets/work-flow/question.png" alt="Nhận câu hỏi" />
-                                    </div>
-                                </div>
-                                <div class="flow-item-content">
-                                    <span class="bullet">2</span>
-                                    <span class="content">
+                            <div class="flow-item-content">
+                                <span class="bullet">2</span>
+                                <span class="content">
                                         <div class="text">Nhận câu hỏi</div>
                                         <div class="sub-text">
                                             Sau khi thông tin của bạn đã được xác thực, các bệnh nhân sẽ gửi câu hỏi đến cho bạn.
                                         </div>
                                     </span>
+                            </div>
+                        </div>
+
+                        <div class="flow-row-3">
+                            <div class="flow-item-left">
+                                <div class="icon">
+                                    <img src="/resources/assets/work-flow/chatting.png" alt="Thực hiện tư vấn" />
                                 </div>
                             </div>
-
-                            <div class="flow-row-3">
-                                <div class="flow-item-left">
-                                    <div class="icon">
-                                        <img src="/resources/assets/work-flow/chatting.png" alt="Thực hiện tư vấn" />
-                                    </div>
-                                </div>
-                                <div class="flow-item-content">
-                                    <span class="bullet">3</span>
-                                    <span class="content">
+                            <div class="flow-item-content">
+                                <span class="bullet">3</span>
+                                <span class="content">
                                         <div class="text">Thực hiện tư vấn</div>
                                         <div class="sub-text">
                                             Thực hiện trò chuyện và đwa ra tư vấn cho bệnh nhân.
                                         </div>
                                     </span>
+                            </div>
+                        </div>
+
+                        <div class="flow-row-4">
+                            <div class="flow-item-left">
+                                <div class="icon">
+                                    <img src="/resources/assets/work-flow/money.png" alt="Nhận thù lao" />
                                 </div>
                             </div>
-
-                            <div class="flow-row-4">
-                                <div class="flow-item-left">
-                                    <div class="icon">
-                                        <img src="/resources/assets/work-flow/money.png" alt="Nhận thù lao" />
-                                    </div>
-                                </div>
-                                <div class="flow-item-content">
-                                    <span class="bullet">4</span>
-                                    <span class="content">
+                            <div class="flow-item-content">
+                                <span class="bullet">4</span>
+                                <span class="content">
                                         <div class="text">Nhận thù lao</div>
                                         <div class="sub-text">
                                             Nhận thù lao từ hệ thống sau khi hoàn thành tư vấn.
                                         </div>
                                     </span>
-                                </div>
                             </div>
                         </div>
                     </div>
