@@ -1,0 +1,59 @@
+.services__section {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.services__section:last-child {
+    border-bottom: 0;
+}
+
+.services__section button {
+    width: 100px;
+}
+
+.services__section i.services__icon__method {
+    font-size: 2em;
+    line-height: 2em;
+    color: #e54a1a;
+}
+
+.services__section .price-detail {
+    font-size: 1.2em;
+    line-height: 3em;
+}
+
+.services__section .price-detail i {
+    padding-right: 5px;
+    color: #e54a1a;
+}
+.services__section .description {
+    padding-bottom:10px;
+}
+
+@media (min-width: 768px) {
+    .services__section {
+        padding: 10px 20px;
+    }
+
+    .services__section .price-detail {
+        font-size: 1.5em;
+        line-height: 3em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .services__section .price-detail {
+        text-align: right;
+    }
+}
+
+.services__section .guarantee-item {
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.services__section .guarantee-item img {
+     display: inline-block;
+}

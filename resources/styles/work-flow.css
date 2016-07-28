@@ -85,18 +85,9 @@ hr.vertical-line {
     border-left: 2px double #00ABD7;
 }
 
-.slider .slide {width: 100%; height: auto;}
-
-.slick-dots li button:before {
-    color: #e54a1a;
-}
-.slick-dots li.slick-active button:before {
-    color: #e54a1a;
-}
 
 .content-half {
     padding: 0;
-    
 }
 
 @media (min-width: 768px) {

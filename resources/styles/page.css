@@ -37,3 +37,12 @@ button.no-border {
     padding: 0;
     color: #e54a1a;
 }
+
+.slider .slide {width: 100%; height: auto;}
+
+.slick-dots li button:before {
+    color: #e54a1a;
+}
+.slick-dots li.slick-active button:before {
+    color: #e54a1a;
+}

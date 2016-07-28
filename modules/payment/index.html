@@ -8,19 +8,160 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/resources/slick/slick.css">
+    <link rel="stylesheet" href="/resources/slick/slick-theme.css">
+
     <link rel="stylesheet" href="/resources/styles/page.css">
+    <link rel="stylesheet" href="/resources/styles/form-controls.css">
+    <link rel="stylesheet" href="/resources/styles/search-result.css">
     <link rel="stylesheet" href="/resources/styles/payment.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="/resources/slick/slick.min.js"></script>
+    <script src="/resources/scripts/payment.js"></script>
 </head>
 
 <body>
     <section class="area">
-        <div class="container">
+        <div class="container content">
             <div class="row">
-                <div class="col-md-12 content">
-                    PAYMENT
+                <div class="col-md-12">
+                    <figure class="card card--highlight">
+                        <div class="split">
+                            <img class="split__img card__image" src="https://placehold.it/200" />
+                            <figcaption class="split__figure">
+                                <div class="visible-xs">
+                                    <h2 class="title">bs. lê hoàng <span>hưng</span></h2>
+                                </div>
+                                <div class="visible-sm visible-md visible-lg">
+                                    <h2 class="title">bác sĩ - lê hoàng <span>hưng</span></h2>
+                                </div>
+
+                                <div class="detail">
+                                    <div class="detail-line">
+                                        <div class="visible-xs">
+                                            <i class="fa fa-user-md" title="Chuyên khoa"></i>Tai Mũi Họng
+                                        </div>
+                                        <div class="visible-sm visible-md visible-lg">
+                                            <span class="box">Chuyên khoa</span>Tai Mũi Họng
+                                        </div>
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-university" title="Chứng chỉ nghề nghiệp"></i>Lorem ipsum
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-home" title="Quê quán"></i>Hà Nội
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-clock-o" title="Số năm kinh nghiệm"></i>3 năm kinh nghiệm
+                                    </div>
+                                    <div class="detail-line">
+                                        <i class="fa fa-map-marker" title="Nơi làm việc"></i>Hn
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </div>
+                        <div class="card__action-bar">
+                            <button class="card__button">Xem hồ sơ</button>
+                        </div>
+                    </figure>
                 </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card--highlight">
+                        <div class="services__section">
+                            <h4 class="text-uppercase text-wrap">Mời bạn chọn dịch vụ tư vấn</h4>
+                        </div>
+
+                        <div class="row services__section">
+                            <div class="col-md-1 col-sm-1 col-xs-2">
+                                <i class="fa fa-comments-o services__icon__method"></i>
+                            </div>
+                            <div class="col-md-6 col-sm-8 col-xs-10">
+                                <div class="description">
+                                    <h4><strong>Tư vấn qua tin nhắn</strong></h4>
+                                    7 ngày sử dụng
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-xs-6">
+                                <div class="price-detail">
+                                    <i class="fa fa-credit-card"></i>
+                                    <span class="text-wrap"><strong>200.000 ₫</strong></span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-6">
+                                <form action="/Payment/Checkout" method="get">
+                                    <input type="hidden" id="DoctorServiceId" name="DoctorServiceId" value="9">
+                                    <input type="hidden" id="OrderInfo" name="OrderInfo" value="9">
+                                    <input type="hidden" id="Provider" name="Provider" value="onepay">
+                                    <input type="hidden" id="Currency" name="Currency" value="VND">
+                                    <button class="pull-right text-uppercase">Tư vấn</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="row services__section">
+                            <div class="col-md-1 col-sm-1 col-xs-2">
+                                <i class="fa fa-phone services__icon__method"></i>
+                            </div>
+                            <div class="col-md-6 col-sm-8 col-xs-10">
+                                <div class="description">
+                                    <h4><strong>Tư vấn trọn gói</strong></h4>
+                                    24 giờ sử dụng, 10 phút đàm thoại
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-xs-6">
+                                <div class="price-detail">
+                                    <i class="fa fa-credit-card"></i>
+                                    <span class="text-wrap"><strong>250.000 ₫</strong></span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 <col-xs-6></col-xs-6>">
+                                <form action="/Payment/Checkout" method="get">
+                                    <input type="hidden" id="DoctorServiceId" name="DoctorServiceId" value="10">
+                                    <input type="hidden" id="OrderInfo" name="OrderInfo" value="10">
+                                    <input type="hidden" id="Provider" name="Provider" value="onepay">
+                                    <input type="hidden" id="Currency" name="Currency" value="VND">
+                                    <button class="pull-right text-uppercase">Tư vấn</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="services__section">
+                            <h4 class="text-uppercase text-wrap">Doctel cam kết</h4>
+                        </div>
+                        <div class="services__section js-slider">
+                            <div class="guarantee-item">
+                                <img src="/resources/assets/ic-ly-doctor.png" />
+                                <h4><strong>Verified Doctors</strong></h4>
+                                All Doctors go through a stringent verification process on Lybrate
+                            </div>
+                            <div class="guarantee-item">
+                                <img src="/resources/assets/ic-ly-privacy.png" />
+                                <h4><strong>100% Privacy Protection</strong></h4>
+                                Your consultation details and personal data will remain confidential
+                            </div>
+                            <div class="guarantee-item">
+                                <img src="/resources/assets/ic-ly-quick.png" />
+                                <h4><strong>Satisfaction Guaranteed</strong></h4>
+                                If you are not satisfied with your experience, we will refund your money
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
 </body>
 
