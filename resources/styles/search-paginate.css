@@ -34,7 +34,7 @@ nav[role="navigation"] {
     }
 
     .cd-pagination a {
-        color: #e54a1a;
+        color: rgb(229,74,26);
         border-radius: 2px;
         overflow: hidden;
         background-color: #fafafa;
@@ -74,8 +74,8 @@ nav[role="navigation"] {
 
     .cd-pagination .current {
         /* selected number */
-        background-color: #e54a1a;
-        border-color: #e54a1a;
+        background-color: rgb(229,74,26);
+        border-color: rgb(229,74,26);
         color: #fafafa;
         pointer-events: none;
     }

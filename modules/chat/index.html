@@ -8,16 +8,234 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
         crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+        crossorigin="anonymous">
+
     <link rel="stylesheet" href="/resources/styles/page.css">
     <link rel="stylesheet" href="/resources/styles/chat.css">
 </head>
 
 <body>
-    <section class="area">
-        <div class="container">
-         
+    <div class="container-fluid content">
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="conversation-list">
+                    <label class="title">
+                        <i class="fa fa-angle-right fa-icon-inactive" aria-hidden="true"></i>
+                        <h2><strong>YÊU CẦU ÐANG MỞ</strong></h2>
+                    </label>
+                    <div class="sub-list-area scrollbar">
+                        <div class="conversation-item selected clearfix" onclick="chatTicketClick(this)">
+                            <input class="chat-msg-bs-id" type="hidden" value="23ec7525-51aa-48e6-98f3-af19dcfe30b5">
+                            <input class="chat-msg-ticket-id" type="hidden" value="48">
+                            <input class="chat-msg-bn-name" type="hidden" value="Hl">
+                            <input class="chat-msg-bs-name" type="hidden" value="Bs.hl">
+                            <input class="chat-msg-bs-username" type="hidden" value="Bs1990">
+                            <input class="call-expired-in" type="hidden" value="600">
+                            <input class="patient-order-id" type="hidden" value="13">
+                            <div>
+                                <img class="pull-left" src="//placehold.it/45" alt="">
+                                <span class="pull-left online-indicator">
+                                <img class=" " src="/Uploads/online.png">
+                            </div>
+                            <div>
+                                <h4 class="content">Bs.hung le</h4>
+                            </div>
+                            <span class="badge pull-right">0</span>
+                        </div>
+
+                        <div class="conversation-item clearfix" onclick="chatTicketClick(this)">
+                            <input class="chat-msg-bs-id" type="hidden" value="23ec7525-51aa-48e6-98f3-af19dcfe30b5">
+                            <input class="chat-msg-ticket-id" type="hidden" value="48">
+                            <input class="chat-msg-bn-name" type="hidden" value="Hl">
+                            <input class="chat-msg-bs-name" type="hidden" value="Bs.hl">
+                            <input class="chat-msg-bs-username" type="hidden" value="Bs1990">
+                            <input class="call-expired-in" type="hidden" value="600">
+                            <input class="patient-order-id" type="hidden" value="13">
+                            <div>
+                                <img class="pull-left" src="//placehold.it/45" alt="">
+                                <span class="pull-left online-indicator">
+                                <img class=" " src="/Uploads/online.png">
+                            </div>
+                            <div>
+                                <h4 class="content">Bs.hung le</h4>
+                            </div>
+                            <span class="badge pull-right">0</span>
+                        </div>
+                        <div class="conversation-item clearfix" onclick="chatTicketClick(this)">
+                            <input class="chat-msg-bs-id" type="hidden" value="23ec7525-51aa-48e6-98f3-af19dcfe30b5">
+                            <input class="chat-msg-ticket-id" type="hidden" value="48">
+                            <input class="chat-msg-bn-name" type="hidden" value="Hl">
+                            <input class="chat-msg-bs-name" type="hidden" value="Bs.hl">
+                            <input class="chat-msg-bs-username" type="hidden" value="Bs1990">
+                            <input class="call-expired-in" type="hidden" value="600">
+                            <input class="patient-order-id" type="hidden" value="13">
+                            <div>
+                                <img class="pull-left" src="//placehold.it/45" alt="">
+                                <span class="pull-left online-indicator">
+                                <img class=" " src="/Uploads/online.png">
+                            </div>
+                            <div>
+                                <h4 class="content">Bs.hung le</h4>
+                            </div>
+                            <span class="badge pull-right">0</span>
+                        </div>
+                        <div class="conversation-item clearfix" onclick="chatTicketClick(this)">
+                            <input class="chat-msg-bs-id" type="hidden" value="23ec7525-51aa-48e6-98f3-af19dcfe30b5">
+                            <input class="chat-msg-ticket-id" type="hidden" value="48">
+                            <input class="chat-msg-bn-name" type="hidden" value="Hl">
+                            <input class="chat-msg-bs-name" type="hidden" value="Bs.hl">
+                            <input class="chat-msg-bs-username" type="hidden" value="Bs1990">
+                            <input class="call-expired-in" type="hidden" value="600">
+                            <input class="patient-order-id" type="hidden" value="13">
+                            <div>
+                                <img class="pull-left" src="//placehold.it/45" alt="">
+                                <span class="pull-left online-indicator">
+                                <img class=" " src="/Uploads/online.png">
+                            </div>
+                            <div>
+                                <h4 class="content">Bs.hung le</h4>
+                            </div>
+                            <span class="badge pull-right">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversation-list scrollbar">
+                    <label class="title">
+                        <i class="fa fa-angle-right fa-icon-inactive" aria-hidden="true"></i>
+                        <h2><strong>YÊU CẦU ÐÃ ÐÓNG</strong></h2>
+                    </label>
+                    <div class="sub-list-area">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-8 nopadmar">
+                <section>
+                    <header class="title clearfix">
+                        <div class="left">
+                            <div class="visible-xs">
+                                <div class="fa-icon"><i class="fa fa-arrow-left" aria-hidden="true" title="Trở lại."></i></div>
+                                <h2><strong>bs. lê hoàng hưng</strong></h2>
+                            </div>
+                            <div class="visible-sm visible-md visible-lg">
+                                <div class="fa-icon"><i class="fa fa-arrow-left" aria-hidden="true" title="Trở lại."></i></div>
+                                <h2><strong>bác sĩ - lê hoàng hưng</strong></h2>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div class="fa-icon"><i class="fa fa-times" aria-hidden="true" title="Kết thúc tư vấn."></i></div>
+                        </div>
+
+                    </header>
+
+                    <div class="chat-area scrollbar">
+                        <ol class="discussion">
+                            <li class="other">
+                                <div class="avatar">
+                                    <img src="//placehold.it/100" />
+                                </div>
+                                <div class="messages">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <time datetime="2009-11-13T20:00">Hung Le • 51 min</time>
+                                </div>
+                            </li>
+                            <li class="self">
+                                <div class="avatar">
+                                    <img src="//placehold.it/100" />
+                                </div>
+                                <div class="messages">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales, urna ac elementum
+                                        convallis, orci.
+                                    </p>
+                                    <time datetime="2009-11-13T20:14">37 mins</time>
+                                </div>
+                            </li>
+                            <li class="other">
+                                <div class="avatar">
+                                    <img src="//placehold.it/100" />
+                                </div>
+                                <div class="messages">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing?</p>
+                                    <time datetime="2009-11-13T20:00">Hung Le • 36 min</time>
+                                </div>
+                            </li>
+                            <li class="other">
+                                <div class="avatar">
+                                    <img src="//placehold.it/100" />
+                                </div>
+                                <div class="messages">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nibh turpis?</p>
+                                    <time datetime="2009-11-13T20:00">Hung Le • 36 min</time>
+                                </div>
+                            </li>
+                            <li class="self">
+                                <div class="avatar">
+                                    <img src="//placehold.it/100" />
+                                </div>
+                                <div class="messages">
+                                    <p>Lorem ipsum.</p>
+                                    <time datetime="2009-11-13T20:14">35 mins</time>
+                                </div>
+                            </li>
+                            <li class="other">
+                                <div class="avatar">
+                                    <img src="//placehold.it/100" />
+                                </div>
+                                <div class="messages">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pellentesque turpis.
+                                        Cras quis ex porttitor, blandit tortor finibus, congue erat. Vestibulum.</p>
+                                    <time datetime="2009-11-13T20:00">Hung Le • 33 min</time>
+                                </div>
+                            </li>
+                            <li class="self">
+                                <div class="avatar">
+                                    <img src="//placehold.it/100" />
+                                </div>
+                                <div class="messages">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <time datetime="2009-11-13T20:14">31 mins</time>
+                                </div>
+                            </li>
+                            <li class="other">
+                                <div class="avatar">
+                                    <img src="//placehold.it/100" />
+                                </div>
+                                <div class="messages">
+                                    <p>Lorem.</p>
+                                    <time datetime="2009-11-13T20:00">Hung Le • 31 min</time>
+                                </div>
+                            </li>
+                            <li class="self">
+                                <div class="avatar">
+                                    <img src="//placehold.it/100" />
+                                </div>
+                                <div class="messages">
+                                    <p>Lorem.</p>
+                                    <time datetime="2009-11-13T20:14">30 mins</time>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <form class="command-area clearfix">
+                        <div class="left padding-right">
+                            <textarea class="current-message" placeholder="Nội dung tin nhắn..."></textarea>
+                        </div>
+
+                        <div class="right">
+                            <div class="fa-icon"><i class="fa fa-picture-o" aria-hidden="true" title="Tải lên..."></i></div>
+                            <div class="fa-icon"><i class="fa fa-phone" aria-hidden="true" title="Gọi điện..."></i></div>
+                        </div>
+                        </header>
+
+                </section>
+            </div>
         </div>
-    </section>
+    </div>
 </body>
 
 </html>

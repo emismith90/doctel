@@ -31,7 +31,7 @@ figcaption h2.title {
     font-size: 1.3em;
     font-weight: 300;
     text-transform: uppercase;
-    border-bottom: 0.22222rem solid #e54a1a;
+    border-bottom: 0.22222rem solid rgb(229,74,26);
     padding-bottom: 0.27778rem;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -51,7 +51,7 @@ figcaption div.detail .detail-line {
 
     figcaption div.detail .detail-line .box {
         padding: 6px;
-        background: #e54a1a;
+        background: rgb(229,74,26);
         color: #fff;
         border-radius: 2px;
         text-transform: uppercase;
@@ -60,7 +60,7 @@ figcaption div.detail .detail-line {
     }
 
     figcaption div.detail .detail-line i {
-        color: #e54a1a;
+        color: rgb(229,74,26);
         width: 20px;
         text-align: center;
     }
@@ -112,7 +112,7 @@ figcaption div.detail .detail-line {
     position: relative;
     display: inline-block;
     line-height: 52px;
-    color: #e54a1a;
+    color: rgb(229,74,26);
 }
 
 .card__image {

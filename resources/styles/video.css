@@ -147,7 +147,7 @@
     line-height: 1;
     padding: 1em 1em 0.9em;
     /*text-transform: uppercase;*/
-    background-color: #3e4d5c;
+    background-color: rgb(62,77,92);
     color: #fafafa;
     fill: currentColor;
 }

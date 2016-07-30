@@ -55,7 +55,7 @@ form select {
 }
 
 form button {
-    background-color: #e54a1a;
+    background-color: rgb(229,74,26);
     color: #fafafa;
     cursor: pointer;
     border: none;
@@ -63,7 +63,7 @@ form button {
 }
 
 form i {
-    color: #e54a1a;
+    color: rgb(229,74,26);
 }
 
 form input,
@@ -81,8 +81,8 @@ form select {
     form input:focus,
     form textarea:focus,
     form select:focus {
-        box-shadow: 0 0 5px #e54a1a;
-        border: 1px solid #e54a1a;
+        box-shadow: 0 0 5px rgb(229,74,26);
+        border: 1px solid rgb(229,74,26);
     }
 
 form input,

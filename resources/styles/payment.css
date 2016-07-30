@@ -15,7 +15,7 @@
 .services__section i.services__icon__method {
     font-size: 2em;
     line-height: 2em;
-    color: #e54a1a;
+    color: rgb(229,74,26);
 }
 
 .services__section .price-detail {
@@ -25,7 +25,7 @@
 
 .services__section .price-detail i {
     padding-right: 5px;
-    color: #e54a1a;
+    color: rgb(229,74,26);
 }
 .services__section .description {
     padding-bottom:10px;
