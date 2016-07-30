@@ -7,9 +7,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-          crossorigin="anonymous">
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
-          crossorigin="anonymous">
+        crossorigin="anonymous">
 
     <link rel="stylesheet" href="/resources/styles/page.css">
     <link rel="stylesheet" href="/resources/styles/form-controls.css">
@@ -20,30 +20,28 @@
 
 <body>
     <section class="area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 content" id="team">
-                    <h1>Tìm kiếm <strong>Bác sĩ</strong></h1>
-                    <div class="d-subtext"><strong>4 Bác sĩ</strong> tham gia tư vấn và hơn thế nữa..</div>
-                    <div class="d-text">Tìm kiếm và tư vấn cùng Bác sĩ <strong>mọi lúc</strong>, <strong>mọi nơi</strong>.</div>
+        <div class="container content" id="team">
+            <h1>Tìm kiếm <strong>Bác sĩ</strong></h1>
+            <div class="d-subtext"><strong>4 Bác sĩ</strong> tham gia tư vấn và hơn thế nữa..</div>
+            <div class="d-text">Tìm kiếm và tư vấn cùng Bác sĩ <strong>mọi lúc</strong>, <strong>mọi nơi</strong>.</div>
 
-                    <form class="form-search" action="/Search/SearchDoctor" method="get">
-                        <!-- RENDER SEARCH VIEW-->
-                        <div class="search-box">
-                            <i class="fa fa-search"></i>
-                            <input type="search" id="searchText" name="searchText" placeholder="Nhập tên Bác sĩ hoặc triệu chứng">
-                            <!--<button type="submit">Tìm Kiếm</button>-->
-                        </div>
+            <form class="form-search" action="/Search/SearchDoctor" method="get">
+                <!-- RENDER SEARCH VIEW-->
+                <div class="search-box">
+                    <i class="fa fa-search"></i>
+                    <input type="search" id="searchText" name="searchText" placeholder="Nhập tên Bác sĩ hoặc triệu chứng">
+                    <!--<button type="submit">Tìm Kiếm</button>-->
+                </div>
 
-                        <div class="advance-search">
-                            <div class="d-subtext">
-                                Nâng cao
-                                <hr>
-                            </div>
+                <div class="advance-search">
+                    <div class="d-subtext">
+                        Nâng cao
+                        <hr>
+                    </div>
 
-                            <div class="row" id="demo">
-                                <div class="col-md-6">
-                                    <label>
+                    <div class="row" id="demo">
+                        <div class="col-md-6">
+                            <label>
                                         <span>
                                             <i class="fa fa-map-marker"></i> Địa điểm làm việc:
                                         </span>
@@ -53,9 +51,9 @@
                                         </select>
                                     </label>
 
-                                </div>
-                                <div class="col-md-6">
-                                    <label>
+                        </div>
+                        <div class="col-md-6">
+                            <label>
                                         <span>
                                             <i class="fa fa-user-md"></i> Chuyên khoa:
                                         </span>
@@ -64,25 +62,21 @@
                                             <option value="2">2</option>
                                         </select>
                                     </label>
-                                </div>
-                            </div>
-
-                            <div class="advance-search-submit">
-                                <button type="submit">Tìm Kiếm <i class="m-icon-swapright m-icon-white"></i></button>
-                            </div>
                         </div>
-                    </form>
+                    </div>
+
+                    <div class="advance-search-submit">
+                        <button type="submit">Tìm Kiếm <i class="m-icon-swapright m-icon-white"></i></button>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
 
     <section class="odd area">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 result-text d-subtext">
-                    Kết quả tìm kiếm:
-                </div>
+            <div class="result-text d-subtext">
+                Kết quả tìm kiếm:
             </div>
             <div class="row">
                 <!--should be 10 item per page-->
@@ -510,23 +504,21 @@
                 </div>
             </div>
 
-            <div id="paginator" class="row">
+            <div id="paginator">
                 <!--should be 10 item per page-->
 
-                <div class="col-md-12">
-                    <nav role="navigation">
-                        <ul class="cd-pagination move-buttons">
-                            <li class="button"><a class="disabled" href="#0">Prev</a></li>
-                            <li><a class="current" href="#0">1</a></li>
-                            <li><a href="#0">2</a></li>
-                            <li><a href="#0">3</a></li>
-                            <li><a href="#0">4</a></li>
-                            <li><span>...</span></li>
-                            <li><a href="#0">20</a></li>
-                            <li class="button"><a href="#0">Next</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                <nav role="navigation">
+                    <ul class="cd-pagination move-buttons">
+                        <li class="button"><a class="disabled" href="#0">Prev</a></li>
+                        <li><a class="current" href="#0">1</a></li>
+                        <li><a href="#0">2</a></li>
+                        <li><a href="#0">3</a></li>
+                        <li><a href="#0">4</a></li>
+                        <li><span>...</span></li>
+                        <li><a href="#0">20</a></li>
+                        <li class="button"><a href="#0">Next</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </section>

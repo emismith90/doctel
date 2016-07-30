@@ -18,30 +18,28 @@
 
 <body>
     <section class="area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 content" id="team">
-                    <h1>Tìm kiếm <strong>Bác sĩ</strong></h1>
-                    <div class="d-subtext"><strong>4 Bác sĩ</strong> tham gia tư vấn và hơn thế nữa..</div>
-                    <div class="d-text">Tìm kiếm và tư vấn cùng Bác sĩ <strong>mọi lúc</strong>, <strong>mọi nơi</strong>.</div>
+        <div class="container content"  id="team">
+            <h1>Tìm kiếm <strong>Bác sĩ</strong></h1>
+            <div class="d-subtext"><strong>4 Bác sĩ</strong> tham gia tư vấn và hơn thế nữa..</div>
+            <div class="d-text">Tìm kiếm và tư vấn cùng Bác sĩ <strong>mọi lúc</strong>, <strong>mọi nơi</strong>.</div>
 
-                    <form class="form-search" action="/Search/SearchDoctor" method="get">
-                        <!-- RENDER SEARCH VIEW-->
-                        <div class="search-box">
-                            <i class="fa fa-search"></i>
-                            <input type="search" id="searchText" name="searchText" placeholder="Nhập tên Bác sĩ hoặc triệu chứng">
-                            <!--<button type="submit">Tìm Kiếm</button>-->
-                        </div>
+            <form class="form-search" action="/Search/SearchDoctor" method="get">
+                <!-- RENDER SEARCH VIEW-->
+                <div class="search-box">
+                    <i class="fa fa-search"></i>
+                    <input type="search" id="searchText" name="searchText" placeholder="Nhập tên Bác sĩ hoặc triệu chứng">
+                    <!--<button type="submit">Tìm Kiếm</button>-->
+                </div>
 
-                        <div class="advance-search">
-                            <div class="d-subtext">
-                                Nâng cao
-                                <hr>
-                            </div>
+                <div class="advance-search">
+                    <div class="d-subtext">
+                        Nâng cao
+                        <hr>
+                    </div>
 
-                            <div class="row" id="demo">
-                                <div class="col-md-6">
-                                    <label>
+                    <div class="row" id="demo">
+                        <div class="col-md-6">
+                            <label>
                                         <span>
                                             <i class="fa fa-map-marker"></i> Địa điểm làm việc:
                                         </span>
@@ -51,9 +49,9 @@
                                         </select>
                                     </label>
 
-                                </div>
-                                <div class="col-md-6">
-                                    <label>
+                        </div>
+                        <div class="col-md-6">
+                            <label>
                                         <span>
                                             <i class="fa fa-graduation-cap"></i> Chuyên khoa:
                                         </span>
@@ -62,16 +60,14 @@
                                             <option value="2">2</option>
                                         </select>
                                     </label>
-                                </div>
-                            </div>
-
-                            <div class="advance-search-submit">
-                                <button type="submit">Tìm Kiếm <i class="m-icon-swapright m-icon-white"></i></button>
-                            </div>
                         </div>
-                    </form>
+                    </div>
+
+                    <div class="advance-search-submit">
+                        <button type="submit">Tìm Kiếm <i class="m-icon-swapright m-icon-white"></i></button>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
 </body>
