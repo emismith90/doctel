@@ -11,12 +11,27 @@ $(document).ready(function () {
 
 function toggle() {
     $('#opening-conversation-toggle').click(function () {
-        $('#opening-conversation').fadeToggle(200);
+        doToggle(this, $('#opening-conversation'));
     });
 
     $('#closed-conversation-toggle').click(function () {
-        $('#closed-conversation').fadeToggle(200);
+        doToggle(this, $('#closed-conversation'));
     });
+}
+
+function doToggle(element, toggleElement) {
+        if ($(toggleElement).is(":visible")) {
+            $("i", element)
+                .addClass('fa-angle-right')
+                .removeClass('fa-angle-down');
+        }
+        else {
+            $("i", element)
+                .addClass('fa-angle-down')
+                .removeClass('fa-angle-right');
+        }
+
+        $(toggleElement).fadeToggle(200);
 }
 
 function mobileFunction() {
