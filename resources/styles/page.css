@@ -67,10 +67,45 @@ button.no-border {
      cursor: hand; 
 }
 
-.nopadmar {
+.clickable {
+    cursor: pointer; 
+    cursor: hand; 
+}
+
+.col-no-pad {
    padding: 0 !important;
    margin: 0 !important;
 }
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+/*visible-lg*/
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+/*visible-md*/
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 992px) {
+    /*visible-sm*/
+    .col-no-pad-mobile {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 768px) {
+/*visible-xs*/
+    .col-no-pad-mobile {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
 
 .clearfix:after { content: "\00A0"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}  
 .clearfix{ display: inline-block;}  

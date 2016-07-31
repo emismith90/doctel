@@ -33,6 +33,7 @@
 }
 .discussion .avatar {
   width: 40px;
+  min-width: 40px;
   position: relative;
 }
 .discussion .avatar img {
@@ -107,7 +108,7 @@
     overflow: hidden;
 }
 
-textarea.current-message
+input.current-message
 {
     padding: 0 5px;
     width: 100%;
@@ -122,18 +123,10 @@ textarea.current-message
     box-shadow: none;
 }
 
-.conversation-list{
-    
-}
-
-.conversation-list .title{
-    
-}
-
 .sub-list-area {
     overflow-y: auto;
     overflow-x: hidden;
-    height: 25%;
+    max-height: 25%;
     background: rgba(239,240,241, 0.5);
 }
 
@@ -187,10 +180,11 @@ textarea.current-message
 	background-color: rgb(229,74,26);	
 	background-image: -webkit-linear-gradient(45deg,
 	                                          rgba(255, 255, 255, .2) 25%,
-											  transparent 25%,
-											  transparent 50%,
-											  rgba(255, 255, 255, .2) 50%,
-											  rgba(255, 255, 255, .2) 75%,
-											  transparent 75%,
-											  transparent)
+                                            transparent 25%,
+                                            transparent 50%,
+                                            rgba(255, 255, 255, .2) 50%,
+                                            rgba(255, 255, 255, .2) 75%,
+                                            transparent 75%,
+                                            transparent)
 }
+
