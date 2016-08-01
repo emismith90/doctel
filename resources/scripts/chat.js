@@ -4,10 +4,19 @@ $(document).ready(function () {
 
     scrollToBottomChat();
 
+    selectedItemChange();
+
     $('form.command-area').submit(function (event) {
         event.preventDefault();
     });
 });
+
+function selectedItemChange() {
+    $('.conversation-item').click(function () {
+        $('.conversation-item.selected').removeClass('selected');
+        $(this).addClass('selected');
+    });
+}
 
 function toggle() {
     $('#opening-conversation-toggle').click(function () {
@@ -20,18 +29,18 @@ function toggle() {
 }
 
 function doToggle(element, toggleElement) {
-        if ($(toggleElement).is(":visible")) {
-            $("i", element)
-                .addClass('fa-angle-right')
-                .removeClass('fa-angle-down');
-        }
-        else {
-            $("i", element)
-                .addClass('fa-angle-down')
-                .removeClass('fa-angle-right');
-        }
+    if ($(toggleElement).is(":visible")) {
+        $("i", element)
+            .addClass('fa-angle-right')
+            .removeClass('fa-angle-down');
+    }
+    else {
+        $("i", element)
+            .addClass('fa-angle-down')
+            .removeClass('fa-angle-right');
+    }
 
-        $(toggleElement).fadeToggle(200);
+    $(toggleElement).fadeToggle(200);
 }
 
 function mobileFunction() {

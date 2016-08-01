@@ -136,6 +136,12 @@ input.current-message
 
 .conversation-item.selected{
     border-left: 5px solid rgb(229,74,26);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.conversation-item h4{
+  padding: 0 55px;
 }
 
 .conversation-item img
@@ -151,12 +157,14 @@ input.current-message
     height: 15px;
     margin-left: -15px; 
     margin-top: 25px; 
-    display: none;
-}
+    /*display: none;*/
+    border-radius: 50%;
 
-.conversation-item .content
-{
-    padding: 0 55px;
+    background: #b4e391; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #b4e391 0%, #61c419 50%, #b4e391 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .conversation-item .badge
@@ -198,4 +206,9 @@ input.current-message
     .sub-list-area {
       max-height: none;
     }
+
+    .chat-area {
+      height: 75%;
+    }
+
 }
