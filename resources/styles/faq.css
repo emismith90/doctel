@@ -1,9 +1,12 @@
+.expander__card {
+    will-change: transform;
+    position: relative;
+    border-radius: 1px;
+    overflow: hidden;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.16);
+}
+
 .expander__toggle {
-  outline: rgb(229,74,26);
-  border-top-style: none;
-  border-right-style: none;
-  border-bottom-style: none;
-  border-left-style: none;
   padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
@@ -22,9 +25,9 @@
   z-index: 1;
 }
 .expander__toggle-bkg {
-  padding-top: 1.66667rem;
+  padding-top: 20px;
   padding-right: 0px;
-  padding-bottom: 1.66667rem;
+  padding-bottom: 20px;
   padding-left: 0px;
   background-color: rgb(255, 255, 255);
   transition-duration: 0.3s, 0.3s;

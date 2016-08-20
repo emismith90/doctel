@@ -1,0 +1,48 @@
+.contact__area {
+  padding-top: 20px;
+}
+.contact__section {
+  padding-top: 1.66667rem;
+  padding-right: 1.66667rem;
+  padding-bottom: 1.66667rem;
+  padding-left: 1.66667rem;
+  background-color: #fafafa;
+  box-shadow: 1px 2px 3px 2px rgba(0,0,0,0.1);
+  border-top-left-radius: 0.1px;
+  border-top-right-radius: 0.1px;
+  border-bottom-right-radius: 0.1px;
+  border-bottom-left-radius: 0.1px;
+}
+.contact__section:first-child {
+  border-top-left-radius: 0.38889rem;
+  border-top-right-radius: 0.38889rem;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.contact__section:not(:first-child) {
+  margin-top: 0.22222rem;
+}
+.contact__section:last-child {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0.38889rem;
+  border-bottom-left-radius: 0.38889rem;
+}
+.contact__icon {
+  float: right;
+  position: relative;
+  color: rgb(229,74,26);
+}
+
+.contact__heading, .contact__phone-link {
+  font-size: 1.55556rem;
+}
+.contact__section a {
+  background-color: transparent;
+  color: rgb(229,74,26);
+  text-decoration: none;
+  touch-action: manipulation;
+}
+.contact__phone-link {
+  line-height: 1;
+}
