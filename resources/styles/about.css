@@ -1,0 +1,110 @@
+.about-section {
+  margin-bottom: 20px;
+}
+.about-section p {
+    padding: 10 0px;
+    font-size: 1.05em;
+    line-height: 1.25em;
+    margin: 0.625em 0;
+    line-height: 1.25em;
+    text-align: justify;
+}
+
+.quote {
+    border-left: 0;
+    font-size: 18px;
+    font-style: italic;
+    margin: 0.25em 0;
+    padding: 0.25em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: rgb(62,77,92);
+}
+
+.quote.quote__narrow {
+    width: 460px;
+}
+
+.quote:before {
+    display: block;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: rgb(229,74,26);
+}
+
+.quote p {
+    font-size: 15px;
+    margin: 0.2em 0;
+    padding: 0 10px;
+}
+.quote p:before {
+    content: "\2014 \2009";
+}
+
+.quote cite {
+    color: rgba(62,77,92, 0.7);
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+.testimonial {
+  background: rgb(239,240,241);
+  text-align: center;
+  padding: 1.66667rem; }
+  .testimonial__img-wrap {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto 1.66667rem; }
+  .testimonial__img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+  .testimonial__quote {
+    font-size: 28px;
+    font-size: 1.55556rem;
+    line-height: 1.46429; }
+  .testimonial__figure {
+    margin: 0; }
+  .testimonial__caption {
+    margin-top: 1em; }
+  .testimonial__sep {
+    display: block; }
+
+.testimonial__quote > div {
+    text-align: left;
+    padding: 0.3rem 0;
+}
+
+.testimonial__quote div.detail {
+    font-size: 0.8em;
+}
+
+@media (min-width: 750px) {
+    .testimonial {
+        margin: 3.33333rem 5px; }
+        .testimonial__img-wrap {
+        top: -4rem;
+        margin: 0 auto -1.66667rem;
+        width: 12rem;
+        height: 12rem; }
+        .testimonial__sep {
+        display: inline; }
+        .testimonial__sep:before {
+            content: '-'; }
+        .testimonial--large .testimonial__img-wrap {
+        width: 12.05556rem;
+        height: 12.05556rem;
+        top: -5rem;
+        margin-bottom: -3.33333rem; }
+        .testimonial--large .testimonial__quote {
+        font-size: 42px;
+        font-size: 2.33333rem;
+        line-height: 1.30952; }
+}   

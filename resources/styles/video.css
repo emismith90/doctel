@@ -1,35 +1,8 @@
-﻿.full-image {
-  position: relative;
-  min-height: 8.3875em;
-  display: table;
-  width: 100%;
-  }
-  .full-image__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    opacity: 0.85; 
+﻿
 
-    -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px);
-  }
-  .full-image__inner {
-    display: table-cell;
-    vertical-align: bottom;
-    position: relative;
-    z-index: 1; }
-
-    .video-player {
-        padding: 40px 0;
-    }
+.video-player {
+    padding: 40px 0;
+}
 
 .video-player__frame {
     position: relative;

@@ -1,0 +1,13 @@
+.policy-section p {
+    padding: 10 0px;
+    font-size: 1.05em;
+    line-height: 1.25em;
+    margin: 0.625em 0;
+    line-height: 1.25em;
+    text-align: justify;
+}
+
+.policy-section p:first-letter {
+    font-size: 1.2em;
+}
+

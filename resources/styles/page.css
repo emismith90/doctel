@@ -114,3 +114,54 @@ html[xmlns] .clearfix { display: block;}
 .clearfix .right {
   float: right;
 }
+
+.full-image {
+  position: relative;
+  min-height: 8.3875em;
+  display: table;
+  width: 100%;
+  }
+  .full-image__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    opacity: 0.85; 
+
+    -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+  }
+  .full-image__inner {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    z-index: 1; }
+        .full-image__inner h1 {
+        font: 400 37px 'Roboto', sans-serif;
+        margin: 0 0 10px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+        .full-image__inner h1 strong {
+            color: rgb(229,74,26);
+            font-weight: normal;
+        }
+
+.full-image__inner .highlight__light {
+    padding: 6px;
+    display: inline-block;
+    background: rgba(255, 255,255, .5);
+}
+
+.full-image__inner .highlight__dark {
+    padding: 6px;
+    display: inline-block;
+    background: rgba(0, 0, 0, .5);
+}
