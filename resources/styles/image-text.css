@@ -9,7 +9,7 @@
 
 .circle {
     border-radius: 50%;
-    border: solid .1rem rgb(62,77,92);
+    border: solid .1rem rgba(62,77,92,0.2);
     margin-left: 56.22222%;
 }
 

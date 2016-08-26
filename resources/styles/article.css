@@ -1,0 +1,73 @@
+.article-content {
+    /*to be remove fix height*/
+    height: 500px; 
+}
+
+.article-teaser {
+    background: rgb(239,240,241);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.article-items {
+    padding: 10px;
+}
+
+.article-item {
+    background-color: #fafafa;
+    margin: 0 10px;
+    padding: 20px;
+}
+
+.article-item .article-item__content {
+    display: inline-block;
+}
+
+.article-item > a {
+    text-decoration: none;
+}
+
+.article-item .date {
+    font-size: 1.2em;
+    display: inline-block;
+    color: rgb(62,77,92);
+    border-bottom: 0.22222rem solid rgba(62,77,92,.2);
+    padding-bottom: 0.2rem;
+}
+
+.article-item .doctor {
+    color: rgb(229,74,26);
+    text-transform: uppercase;
+}
+
+.article-item img.circle {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.reference {
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.reference > a.all {
+    width: 30%;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* use padding and font-size to change buttons size */
+    padding: .6em .8em;
+    font-size: 1.6rem;
+    color: rgb(229,74,26);
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: #fafafa;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+}

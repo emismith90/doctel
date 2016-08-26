@@ -1,11 +1,202 @@
-.card {
-    padding: 15px;
+.timeline-area{
+    background: rgb(239,240,241);
+    padding: 20px 0;
+}
+
+.timeline {
+	margin: 30px 0 0 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+} 
+
+/* The line */
+.timeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 10px;
+	background: rgb(255,255,255);
+	left: 20%;
+	margin-left: -10px;
+}
+
+.timeline > li {
+	position: relative;
+}
+
+/* The date/time */
+.timeline > li .timeline-item--time {
+	display: block;
+	width: 25%;
+	padding-right: 100px;
+	position: absolute;
+}
+
+.timeline > li .timeline-item--time span {
+    display: block;
+	text-align: right;
+}
+
+.timeline > li .timeline-item--time span:first-child {
+    font-size: 0.9em;
+	color: rgb(112,128,144);
+}
+
+.timeline > li .timeline-item--time span:last-child {
+    font-size: 2.9em;
+    color: rgb(62,77,92);
+}
+
+/* Right content */
+.timeline > li .timeline-item--content {
+	margin: 0 0 15px 25%;
+	background: rgb(255,255,255);
+	color: rgb(62,77,92);
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 1.4;
+    padding: 20px;
     will-change: transform;
     position: relative;
     border-radius: 2px;
-    overflow: hidden;
-    background-color: #fafafa;
     -webkit-transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
     box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.16),1px 2px 8px 1px rgba(0,0,0,0.16);
+}
+
+.timeline > li .timeline-item--content:hover {
+    box-shadow: 1px 6px 12px 1px rgba(0,0,0,0.16),1px 4px 20px 1px rgba(0,0,0,0.16);
+}
+/*.timeline > li:nth-child(odd) .timeline-item--content {
+	background: rgb(206,67,23);
+}*/
+
+.timeline > li .timeline-item--content h2 { 
+    color: rgb(229,74,26);
+	margin-top: 0px;
+	padding: 0 0 10px 0;
+	border-bottom: 0.22222rem solid rgb(229,74,26);
+    text-transform: uppercase;
+}
+
+/* The triangle */
+.timeline > li .timeline-item--content:after {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: rgb(229,74,26);
+	border-width: 12px;
+	top: 8px;
+}
+
+/*.timeline > li:nth-child(odd) .timeline-item--content:after {
+	border-right-color: rgb(206,67,23);
+}*/
+
+/* The icons */
+.timeline > li .timeline-item--icon {
+	width: 40px;
+	height: 40px;
+	font-family: 'ecoico';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	font-size: 1.4em;
+	line-height: 40px;
+	-webkit-font-smoothing: antialiased;
+	position: absolute;
+	color:rgb(255,255,255);
+	background: rgb(229,74,26);
+	border-radius: 50%;
+	box-shadow: 0 0 0 8px rgb(255,255,255);
+	text-align: center;
+	left: 20%;
+	top: 0;
+	margin: 0 0 0 -25px;
+    -webkit-transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.timeline > li .timeline-item--icon:hover {
+	box-shadow: 0 0 0 8px rgb(229,74,26);
+}
+
+.timeline > li .timeline-item--icon i.fa{
+    margin-top: .5em;
+}
+
+.pagination {
+    text-align: center;
+    width: 100%;
+}
+
+.pagination > a.more {
+    width: 30%;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* use padding and font-size to change buttons size */
+    padding: .6em .8em;
+    font-size: 1.6rem;
+    color: rgb(229,74,26);
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: #fafafa;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* Example Media Queries */
+@media screen and (max-width: 65.375em) {
+
+	.timeline > li .timeline-item--time span:last-child {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 47.2em) {
+	.timeline:before {
+		display: none;
+	}
+
+	.timeline > li .timeline-item--time {
+		width: 100%;
+		position: relative;
+		padding: 0 0 20px 0;
+	}
+
+	.timeline > li .timeline-item--time span {
+		text-align: left;
+	}
+
+	.timeline > li .timeline-item--content {
+		margin: 0 0 30px 0;
+		padding: 1em;
+		font-weight: 400;
+		font-size: 95%;
+	}
+
+	.timeline > li .timeline-item--content:after {
+		right: auto;
+		left: 20px;
+		border-right-color: transparent;
+		top: -20px;
+	}
+
+	.timeline > li .timeline-item--icon {
+		position: relative;
+		float: right;
+		left: auto;
+		margin: -55px 5px 0 0px;
+	}	
 }

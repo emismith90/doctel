@@ -65,6 +65,12 @@ figcaption div.detail .detail-line {
         text-align: center;
     }
 
+
+
+.card--doctorinfo {
+    height: 241px;
+}
+
 .card {
     margin-top: 20px;
     will-change: transform;
@@ -75,10 +81,6 @@ figcaption div.detail .detail-line {
     -webkit-transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
     box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.16),1px 2px 8px 1px rgba(0,0,0,0.16);
-}
-
-.card--doctorinfo {
-    height: 241px;
 }
 
 .card--highlight:hover {
