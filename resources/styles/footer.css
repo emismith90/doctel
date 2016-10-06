@@ -1,0 +1,40 @@
+footer {
+    background-color:black;
+    text-align: left;
+    color: #fafafa;
+    padding: 40px 0px 40px 0;
+}
+
+footer a, 
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+    text-decoration: none!important;
+    color: rgb(229,74,26);
+}
+
+footer .navigator a, footer .navigator h5 {
+    color: #fafafa;
+}
+
+footer .navigator a{
+    font-size: .8em;
+    font-weight: 100;
+}
+
+footer .navigator h5 {
+    padding-top: 20px;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+footer .copyright{
+    padding-top: 60px;
+}
+
+footer ol, footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

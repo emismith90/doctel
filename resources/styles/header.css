@@ -1,0 +1,100 @@
+header {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #b6c3cd;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  z-index: 999;
+}
+
+header.clone {
+  position: fixed;
+  top: -75px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: 0.2s top cubic-bezier(.3,.73,.3,.74);
+}
+
+body.down header.clone {
+  top: 0;
+}
+
+.logo {
+    margin-top: 10px; 
+}
+
+.logo > img {
+    height: 50px;
+}
+
+.navigator {
+    color: rgb(62,77,92);
+    font-size: 1.2em;
+}
+.navigator > a {
+    text-decoration: none;
+    color: rgb(62,77,92);
+    font-weight: normal;
+    margin-right: 10px;
+    line-height: 65px;
+}
+
+.navigator > a::last-child, margin-right  {
+    margin-right: 5px;
+}
+
+.margin-left  {
+    margin-left: 5px;
+}
+
+.navigator > a:hover {
+    border-top: solid 5px rgb(229,74,26); 
+    padding-top: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fafafa;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10 15px;
+    width: 100%;
+}
+
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: rgb(62,77,92);
+    font-size: .9em;
+    line-height: 2.4em;
+}
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 768px) {
+    .dropdown-content {
+        min-width: 200px;
+        margin-left: -170px;
+    }
+}
+
+iframe{
+    z-index:-1;
+}
+
+/*
+.dropdown:focus .dropdown-content {
+    display: block;
+}*/
+

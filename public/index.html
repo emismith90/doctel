@@ -22,14 +22,46 @@
     <link rel="stylesheet" href="/resources/styles/work-flow.css">
     <link rel="stylesheet" href="/resources/styles/image-text.css">
 
+    <link rel="stylesheet" href="/resources/styles/header.css">
+    <link rel="stylesheet" href="/resources/styles/footer.css">
+
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/resources/slick/slick.min.js"></script>
     <script src="/resources/scripts/work-flow.js"></script>
+
+    <script src="/resources/scripts/header.js"></script>
 </head>
 
 <body>
     <header>
-        <div style="text-align: center;border-bottom: 1px solid rgba(0,0,0,0.2);font-size:30px;color:rgba(0,0,0,0.2)">HEADER</div>
+        <div class="container clearfix">
+            <div class="left logo">
+                <img class="hidden-xs" src="/resources/assets/rsz_logo-lg.png" alt="Trang chủ">
+                <img class="visible-xs" src="/resources/assets/rsz_logo-sm.png" alt="Trang chủ">
+            </div>
+
+            <div class="right navigator">
+                <!--not authorize-->
+                <a href="/Account/Login?returnUrl=registerBacSiLink" title="Đăng nhập bác sĩ">Bác sĩ</a>
+                <a href="/Account/Login?returnUrl=registerLink" title="Đăng nhập bệnh nhân">Bệnh nhân</a>
+
+                <!--authorized-->
+                <span class="dropdown">
+                    <span>
+                        <img src="/resources/assets/rsz_icon-user.png" alt="Xin chào Lê Hoàng Hưng!">
+                        <span class="margin-left hidden-xs">
+                            Xin chào Lê Hoàng Hưng!
+                        </span>
+                    </span>
+                    <div class="dropdown-content">
+                        <a href="/" title="Thông tin cá nhân">Thông tin cá nhân</a>
+                        <a href="/" title="Chat">Chat</a>
+                        <a href="/" title="Đăng xuất">Đăng xuất</a>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <!--<div style="text-align: center;border-bottom: 1px solid rgba(0,0,0,0.2);font-size:30px;color:rgba(0,0,0,0.2)">HEADER</div>-->
     </header>
 
     <section>
@@ -327,7 +359,64 @@
     </section>
 
     <footer>
-        <div style="background-color:black; text-align: center;padding:3em 0;font-size:30px;color:rgba(255,255,255,0.2)">FOOTER</div>
+        <div class="container">
+            <div class="row navigator">
+                <div class="col-md-4">
+                    <h5>Bác sĩ</h5>
+                    <ul>
+                        <li>
+                            <a href="/Doctor/GetDoctorOfMonth">Danh Sách Bác Sĩ Của Tháng</a>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="expander collapsed" id="statisticBySpecialization">Thống kê bác sĩ theo chuyên khoa</a>
+                            <div class="content" style="display:none; padding-top: 5px">
+                                <div id="statisticBySpecializationResult"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="expander collapsed" id="statisticByLocation">Thống kê bác sĩ theo tỉnh thành</a>
+                            <div class="content" style="display:none; padding-top: 5px">
+                                <div id="statisticByLocationResult"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Về doctel.me</h5>
+                    <ul>
+                        <li>
+                            <a href="/">Trang Chủ</a>
+                        </li>
+                        <li>
+                            <a href="/Home/About">Về Chúng Tôi</a>
+                        </li>
+                        <li>
+                            <a href="/Home/Privacy">Điều Khoản</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5>Giúp đỡ</h5>
+                    <ul>
+                        <li>
+                            <a href="/Home/Contact">Liên Lạc</a>
+                        </li>
+                        <li>
+                            <a href="/Home/FAQ">Câu Hỏi Thường Gặp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <div>
+                    Copyright © 2016 doctel.me.
+                </div>
+                <div>
+                    Doctel.me giữ bản quyền nội dung trên website này. <a href="/Home/Privacy">Điều Khoản Sử Dụng</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <div style="display: none !important;">
