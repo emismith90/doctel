@@ -63,6 +63,10 @@ body.down header.clone {
     cursor: pointer;
 }
 
+.dropdown img {
+    border-radius: 50%;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -98,3 +102,6 @@ iframe{
     display: block;
 }*/
 
+#statisticBySpecializationResult{
+    padding: 5px 0 5px 20px;
+}
