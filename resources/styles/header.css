@@ -93,10 +93,6 @@ body.down header.clone {
     }
 }
 
-iframe{
-    z-index:-1;
-}
-
 /*
 .dropdown:focus .dropdown-content {
     display: block;
