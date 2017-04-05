@@ -1,3 +1,25 @@
+.temp-notify {
+    text-align: center;
+    background: rgba(254, 239, 179, 0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.hotline {
+    color: #00529B;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 65px;
+}
+.flex-box {
+    display:flex;
+}
+
+.flex-box .flex-item {
+    flex: 1;
+}
 
 .content h1, .content h2 {
     font: 400 37px 'Roboto', sans-serif;

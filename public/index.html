@@ -33,35 +33,34 @@
 </head>
 
 <body>
-    <header>
-        <div class="container clearfix">
-            <div class="left logo">
-                <img class="hidden-xs" src="/resources/assets/rsz_logo-lg.png" alt="Trang chủ">
-                <img class="visible-xs" src="/resources/assets/rsz_logo-sm.png" alt="Trang chủ">
-            </div>
+    <header class="header">
+        <div class="temp-notify">
+            <span class="text-left text-danger text-capitalize" style="font-size:1.2em">Webstie đang trong giai đoạn test nội bộ, chưa hoạt động chính thức</span>
+        </div>
+        <div class="container flex-box">
+            <span class="logo">
+                <a href="/">
+                    <img class="hidden-xs" src="/assets/themes/assets/rsz_logo-lg.png" alt="Trang chủ">
+                    <img class="visible-xs" src="/assets/themes/assets/rsz_logo-sm.png" alt="Trang chủ">
+                </a>
+            </span>
 
-            <div class="right navigator">
+            <span class="flex-box flex-item" style="padding: 0 1em">
+                <span class="flex-item"></span>
+                <span class="hotline">Hotline: 09.68.78.88.38</span>
+            </span>
+            <span class="navigator">
                 <!--not authorize-->
                 <a href="/Account/Login?returnUrl=registerBacSiLink" title="Đăng nhập bác sĩ">Bác sĩ</a>
                 <a href="/Account/Login?returnUrl=registerLink" title="Đăng nhập bệnh nhân">Bệnh nhân</a>
+            </span>
 
-                <!--authorized-->
-                <span class="dropdown">
-                    <span>
-                        <img src="/resources/assets/rsz_icon-user.png" alt="Xin chào Lê Hoàng Hưng!">
-                        <span class="margin-left hidden-xs">
-                            Xin chào Lê Hoàng Hưng!
-                        </span>
-                    </span>
-                    <div class="dropdown-content">
-                        <a href="/" title="Thông tin cá nhân">Thông tin cá nhân</a>
-                        <a href="/" title="Chat">Chat</a>
-                        <a href="/" title="Đăng xuất">Đăng xuất</a>
-                    </div>
-                </span>
-            </div>
+            <script src="/Scripts/NotifyNative.js"></script>
+            <script>
+                callNativeApp('setAccountName', '');
+            </script>
         </div>
-        <!--<div style="text-align: center;border-bottom: 1px solid rgba(0,0,0,0.2);font-size:30px;color:rgba(0,0,0,0.2)">HEADER</div>-->
+
     </header>
 
     <section>
